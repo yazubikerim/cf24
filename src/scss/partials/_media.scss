@@ -1,0 +1,297 @@
+@media only screen and(max-width: 768px){
+    .header-top{
+        display: none;
+    }}
+@media only screen and(max-width:992px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-logo{
+        margin-left: 2px !important;
+    }
+    .nav-center{
+        display: none !important;
+    }
+    .logo{
+        width: 170px !important;
+        height: 19px !important;
+    }
+    .nav-container{
+        min-width: 96% !important;
+        padding-left: 1.6%!important;
+        padding: 6px 0 !important;
+    }
+    .nav-icon{
+        width: 17px !important;
+    }
+    .nav-search-mobile{
+        display: block !important;
+    }
+    .nav-search{
+        display: none !important;
+    }
+    .nav-login{
+        position: absolute !important;
+        right: 16% !important;
+        z-index:1 !important;
+        margin-top: -40px !important;
+    }
+    .nav-favorite{
+        position: absolute !important;
+        right: 10% !important;
+        z-index:1 !important;
+        margin-top: -40px !important;
+    }
+    .nav-shopping{
+        position: absolute !important;
+        right: 4% !important;
+        z-index:1 !important;
+        margin-top: -40px !important;
+    }
+    .right-nav span{
+        display: none !important;
+    }
+    .burgers{
+        display: inline-block !important;
+    }
+    .search-input{
+        display: inline-block !important;
+    }
+    .mobileMenu-1{
+        display: block !important;
+    }
+    .mobileMenu-2{
+        display: block !important;
+    }
+} 
+
+@media only screen and(max-width: 768px){
+    .nav-container{
+        min-width: 95%;
+        padding-left: 10px!important;
+    }
+    .nav-logo{
+        margin-left: 1.5% !important;
+    }
+    .burgers{
+        margin-left: 1% !important;
+    }
+    .search-input{
+        width: 73% !important;
+    }
+    .nav-search-mobile{
+        margin-left: 12% !important;
+        width: 7% !important;
+    }
+    .nav-login{
+        position: absolute !important;
+        right: 22% !important;
+        z-index:1 !important;
+        margin-top: -40px !important;
+    }
+    .nav-favorite{
+        position: absolute !important;
+        right: 13% !important;
+        z-index:1 !important;
+        margin-top: -40px !important;
+    }
+    .nav-shopping{
+        position: absolute !important;
+        right: 4% !important;
+        z-index:1 !important;
+        margin-top: -40px !important;
+    }
+}
+@media only screen and(max-width: 576px){
+    .nav-container{
+        max-width: 94% !important;
+        padding-left: 3%!important;
+    }
+    .burgers{
+       margin-left:0.5% !important;
+    }
+    .search-input{
+        width: 71% !important;
+    }   
+    .nav-search-mobile{
+        left: 18% !important;
+    }
+}
+
+
+
+@media only screen and (max-width:1200px){
+    .slider-img{
+        min-width: 24.8%;
+        margin-right: 1%;      
+    }
+    .arrowDivNext{
+        top:160px;
+        left: 94%;
+    }
+    .arrowDivPrev{
+        top:160px;
+    }
+}
+@media only screen and (max-width:992px){
+    .slider-img{
+        min-width: 24.77%;
+        margin-right: 1%;    
+    }
+    .arrowDivNext{
+        left: 93%;
+        top:43%;
+    }
+    .arrowDivPrev{
+        top:43%;
+    }
+    .container{
+        max-width: 97%;
+    }
+    .slide5{
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width:768px){
+    .slider-img{
+        min-width: 50.50%;      
+    }
+    .arrowDivNext{    
+        left: 89%;
+        top:45%;
+    }
+    .arrowDivPrev{
+        top:46%;
+    }
+    .container{
+        max-width: 96%;
+    }
+    .slide3{
+        margin-left: 30px;
+    }
+}    
+@media only screen and (max-width:576px){
+    .slider-img{
+        min-width:50.5%;    
+    }
+    .arrowDivNext{
+        top:45%;
+        left: 89%;
+    }
+    .arrowDivPrev{
+        top:43%;
+    }
+    .container{
+        max-width:94%;
+    }
+}
+
+@media only screen and(max-width: 768px){
+
+    .home-top-banner{
+        height: 150px;
+        background-position: right 30% bottom 40%;
+    background-size: 1800px;
+    .home-banner-area{
+        background-color: rgba(255, 0, 0, 0.0) !important;
+        
+        .banner-text-1{
+            color: white !important;
+            font-size: 12px;
+        }
+        .banner-text-2{
+            color: white !important;
+            font-size: 18px;
+        }
+        .banner-text-3{
+            color: white !important;
+            font-size: 12px;
+        }
+        span{
+            border-bottom: white 2px solid !important;
+        }
+    }}
+
+    .image-style-content{
+        .image-style-text{
+            position: relative;
+           
+            height: 258px;
+           
+            
+            
+            
+            .image-style-text-1{
+               
+               
+                text-align: center;
+                
+            }
+            
+
+        }
+        .image-style-model{
+            display: none;
+            .image-style-model-1{
+            display: none;
+        }
+        .image-style-model-2{
+            display: none;
+            
+        }
+
+                 }
+        .image-style-model-tall{
+            
+            width: 50%;
+            height: 258px; }
+       .col-md-6{
+          
+        width: 50% !important;
+        }
+        
+            
+       
+    }
+
+
+    .mobil-container{
+        margin: 3% 4%;
+    }
+
+}
+
+
+@media only screen and(max-width: 768px){
+    
+
+        .carousel-image-2,.carousel-image-3,.carousel-image-4,.carousel-image-5{
+            display: none; }
+
+            .mobil-container{
+            .col-md-6{
+                padding-right: 0px !important; 
+                padding-left: 0px !important;}}
+            .carousel-image-1{
+                
+                height: 550px;
+                .carousel-image-text{
+                    
+                    
+                    width: 100%;
+                    text-align: center;
+                    align-items: center;
+                    padding: 20px 0;
+                    font-size: 20px;
+                    
+                    &:hover{
+                      
+                        background-color:$xc-footer-grey-1;
+                    }
+                }
+            }
+       
+        }
+           
+
+   

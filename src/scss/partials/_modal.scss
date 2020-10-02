@@ -1,0 +1,170 @@
+//----------ClickModal-----------//
+.user-modal-div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    z-index: 2;
+    visibility: hidden;
+    margin: 0 auto;
+    transition: background-color 0.5s, opacity 0.5s;
+}
+.user-modal-div-active{
+    background-color: rgba(0,0,0,0.5);
+    visibility: visible;
+}
+.user-modal{
+    width: 598px;
+    height: 644px;
+    background-color: #fff;
+    display: block;
+    margin: 30px auto;
+    opacity: 0.4;
+    transform: translateY(-130%);
+    transition: 0.5s;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+.user-modal-active{
+    opacity: 1;
+    transform: translateY(0);
+}
+.nav-modal-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-modal-icon{
+    width: 30px;
+    display: block;
+    margin-bottom: 15px;
+}
+.close-modal{
+    position: absolute;
+    top:10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.nav-modal-body{
+    height: 443px;
+    padding: 50px 100px;
+}
+
+.nav-modal-body label{
+    font-weight: bold;
+    line-height: 35px;
+}
+.nav-modal-body input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 1px;
+    border: 1px solid black;
+}
+.nav-modal-body input:focus{
+    outline: 0;
+}
+.nav-modal-body button{
+    width: 100%;
+    border-radius: 1px;
+}
+.nav-modal-body .forgot-password{
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.nav-modal-body hr{
+    border-top: 1px solid black;
+}
+.modal-oder-center{
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:368px;
+    left: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 3;
+    background-color: #fff;
+    width: 70px;
+}
+.modal-footer-btn{
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+//----------HoverModal--------------//
+.shopping-modal-div{
+    position: relative;
+}
+.shopping-modal{
+    margin-top:70px;
+    position: absolute;
+    width: 318px;
+    height: 250px;
+    z-index: 2;
+    background-color: #fff;
+    right: 1%;
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: margin 0.3s, opacity 0.3s, visibility 0.3s;
+    border-radius: 1px;
+}
+.shopping-modal-active{
+    margin-top: 90px;
+    position: absolute;
+    width: 318px;
+    height: 250px;
+    z-index: 2;
+    background-color: #fff;
+    right: 1%;
+    border: 1px solid #ccc;
+    opacity: 1;
+    visibility: visible;
+}
+.shopping-modal-head{
+    height: 130px;
+    padding: 20px 20px 0 20px;
+}
+.shopping-modal-head h2{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: rgb(64,64,64);
+    padding: 0 36px;
+    text-align: center;
+}
+.shopping-modal-head p{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: rgba(0,0,0,0.7);
+    padding: 0 36px;
+    text-align: center;
+    padding: 0 24px;
+    line-height: 18px;
+    margin-bottom: 100px;
+}
+.shopping-modal-foot{
+    background-color: rgb(246,246,246);
+    padding: 10px;
+}
+.shopping-modal-foot h2{
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 36px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+

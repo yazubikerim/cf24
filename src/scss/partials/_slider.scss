@@ -1,0 +1,106 @@
+.slider-wrapper{
+    border: 0;
+}
+.fw-slider{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+.containerSlider{
+    padding: 0;
+    position: relative;
+}
+.fw-slider-section{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    overflow-x: visible;
+}
+.fw-slider-section-active{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    overflow-x: visible;
+    transition: all 0.3s;
+    transform: translate3d();
+}
+.fw-slider-section::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.fw-slider-section li{
+    list-style: none;
+    font-size:0.8rem;
+}
+.slider-img{
+    cursor: pointer;
+    left: 0;
+    margin:0 10px 0 0;
+    min-width: 24.35%;
+    height: auto;
+    position: relative;
+    color: #333;
+    filter: brightness(0.95);
+}
+.slider-img img{
+    width: 100%;
+}
+.fw-slider-arrowDivPrev{
+    padding: 12px 12px 12px 20px;
+    background-color: #fdfdfd;
+    position: absolute;
+    top: 190px;
+    font-size: 60px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+    left: 1%;
+    line-height: 0.65rem;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: none;
+}
+.fw-slider-arrowDivNext{
+    padding: 12px 20px 12px 12px;
+    background-color: #fdfdfd;
+    position: absolute;
+    top: 190px;
+    font-size: 60px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+    left: 95%;
+    line-height: 0.65rem;
+    display: block;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: none;
+}
+.slider-prev{
+    font-size: 36px;
+    display: block;
+    border-top: 1px solid #444;
+    border-right: 1px solid #444;
+    transform: rotate(225deg);
+    transition: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+.slider-next{
+    font-size: 36px;
+    display: block;
+    border-top: 1px solid #444;
+    border-right: 1px solid #444;
+    transform: rotate(45deg);
+    transition: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

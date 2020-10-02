@@ -1,0 +1,40 @@
+.mobil-container {
+    margin: 5% 3%;
+
+    .image-style {
+
+        height: 40vh;
+
+        .image-style-1 {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 50%;
+            float: left;
+            margin-right: 0 !important;
+            border: $xc-footer-grey-1 1px solid;
+            height: 20vh;
+            background-color: $xc-grey-1;
+
+            .mobil-text {
+                font-size: 15px;
+                font-weight: 540;
+
+
+                line-height: 1.333;
+
+            }
+        }
+
+        .image-style-2 {
+
+            text-align: center;
+            width: 50%;
+            float: left;
+            border: $xc-footer-grey-1 1px solid;
+            height: 20vh;
+        }
+    }
+}
