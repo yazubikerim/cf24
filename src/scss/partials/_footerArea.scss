@@ -104,3 +104,50 @@
 
 
 }
+
+
+.accordion {
+    background-color:#e1e1e1;
+    color: black;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-top: 1px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+  .accordion-footer-nav1{
+      margin-top: 23px;
+      font-size: 14px;
+  }

@@ -308,3 +308,26 @@ let fwSliderVarSlideWidth576=-51;//Yüzde
 let fwResponsive = true;
 
 const slide = new Slider(fwResponsive,fwSlider,fwSliderSection,fwSliderarrowNext,fwSliderarrowPrev,sliderAllElements,fwSlideWidth,fwSliderBorderInner,4,4);
+
+
+
+
+
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
