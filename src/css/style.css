@@ -6507,31 +6507,29 @@ template {
     padding-right: 0;
     padding-left: 0; }
 
-.mobil-container {
-  margin: 5% 3%; }
-  .mobil-container .image-style {
-    height: 40vh; }
-    .mobil-container .image-style .image-style-1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 50%;
-      float: left;
-      margin-right: 0 !important;
-      border: #e1e1e1 1px solid;
-      height: 20vh;
-      background-color: #f6f6f6; }
-      .mobil-container .image-style .image-style-1 .mobil-text {
-        font-size: 15px;
-        font-weight: 540;
-        line-height: 1.333; }
-    .mobil-container .image-style .image-style-2 {
-      text-align: center;
-      width: 50%;
-      float: left;
-      border: #e1e1e1 1px solid;
-      height: 20vh; }
+.mobil-container .image-style {
+  height: 40vh; }
+  .mobil-container .image-style .image-style-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    float: left;
+    margin-right: 0 !important;
+    border: #e1e1e1 1px solid;
+    height: 20vh;
+    background-color: #f6f6f6; }
+    .mobil-container .image-style .image-style-1 .mobil-text {
+      font-size: 15px;
+      font-weight: 540;
+      line-height: 1.333; }
+  .mobil-container .image-style .image-style-2 {
+    text-align: center;
+    width: 50%;
+    float: left;
+    border: #e1e1e1 1px solid;
+    height: 20vh; }
 
 .footer-Area {
   background-color: #f6f6f6;
@@ -6551,10 +6549,10 @@ template {
   height: 547px;
   width: 100%; }
   .footer-content .footer-nav {
-    padding: 3.5% 0%; }
+    padding: 2.3% 0%; }
     .footer-content .footer-nav .footer-nav-1 {
-      font-size: 14px;
-      line-height: 1.5;
+      font-size: 17px;
+      line-height: 3;
       font-weight: 700;
       letter-spacing: 2px;
       color: #1a1a1a; }
@@ -6568,15 +6566,15 @@ template {
         float: left;
         margin-right: 10px; }
     .footer-content .footer-nav .footer-nav-2 {
-      font-size: 14px;
-      line-height: 1.5; }
+      font-size: 15.2px;
+      line-height: 1.1; }
     .footer-content .footer-nav .footer-nav-3 {
-      padding-top: 35px;
+      padding-top: 67px;
       font-size: 14px;
-      line-height: 1.5; }
+      line-height: 1; }
     .footer-content .footer-nav .footer-nav-4 {
-      font-size: 15px;
-      line-height: 1.5;
+      font-size: 15.2px;
+      line-height: 1.1;
       width: 270px; }
     .footer-content .footer-nav .footer-nav-5 {
       font-size: 14px;
@@ -6652,21 +6650,22 @@ template {
     .footer-image-contact .footer-image-text-area .footer-area-content {
       display: block;
       position: relative;
-      margin: 5% 5%; }
+      margin: 6.7% 5%; }
       .footer-image-contact .footer-image-text-area .footer-area-content .title-1 {
         font-size: 26px;
         font-weight: 700;
         letter-spacing: -.8px;
         line-height: 1.125;
-        margin-bottom: 20px; }
+        margin-bottom: 25px; }
       .footer-image-contact .footer-image-text-area .footer-area-content .sub-text {
         font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px; }
+        line-height: 1.2;
+        margin-bottom: 26px; }
       .footer-image-contact .footer-image-text-area .footer-area-content .email-text {
         line-height: 1.5;
         font-weight: 700;
-        color: #1a1a1a; }
+        color: #1a1a1a;
+        margin-bottom: 10px; }
       .footer-image-contact .footer-image-text-area .footer-area-content .newsletter-button {
         background-color: #1a1a1a;
         color: #f6f6f6;
@@ -6674,17 +6673,18 @@ template {
         height: 100%; }
       .footer-image-contact .footer-image-text-area .footer-area-content .mini-text {
         font-size: 12px;
-        margin-top: 15px; }
+        margin-top: 17px; }
 
 .footer-description {
-  margin: 40px 0px; }
+  margin: 34px 0px; }
   .footer-description .footer-title {
     font-size: 28px;
-    margin-bottom: 20px; }
+    margin-bottom: 26px;
+    line-height: 36px; }
   .footer-description .footer-text {
     font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
     color: black; }
 
 .user-modal-div {
@@ -7287,7 +7287,8 @@ template {
       display: flex;
       margin-bottom: 10px;
       font-size: 20px;
-      line-height: 1.333; }
+      line-height: 1.333;
+      margin: 9px; }
     .image-style-content .image-style-text .image-style-text-2 {
       display: block;
       text-decoration: underline;
@@ -7344,7 +7345,7 @@ template {
 
 /** 2.image **/
 .products-section {
-  margin-top: 50px;
+  margin-top: 52px;
   width: 100%; }
   .products-section .products-section-title {
     margin-bottom: 30px;
@@ -7360,11 +7361,10 @@ template {
       font-size: 16px;
       font-weight: 700; }
       .products-section .products-section-title .products-section-title-2 span {
-        padding-bottom: 3px;
         border-bottom: #1a1a1a 2px solid; }
 
 .carousel-image-top-text {
-  margin-top: 75px;
+  margin-top: 73px;
   margin-bottom: 20px;
   width: 100%;
   color: #1a1a1a;
@@ -7589,13 +7589,17 @@ template {
     margin: 3% 4%; } }
 
 @media only screen and (max-width: 768px) {
+  .carousel-image-top-text {
+    margin-left: 20px; }
   .carousel-image-2, .carousel-image-3, .carousel-image-4, .carousel-image-5 {
     display: none; }
   .mobil-container .col-md-6 {
     padding-right: 0px !important;
     padding-left: 0px !important; }
   .carousel-image-1 {
-    height: 550px; }
+    height: 550px;
+    background-size: 259px;
+    background-position: right 45% top 15%; }
     .carousel-image-1 .carousel-image-text {
       width: 100%;
       text-align: center;
@@ -7615,8 +7619,12 @@ template {
   .footer-content {
     display: none; }
   button:focus {
-    outline: none !important; } }
+    outline: none !important; }
+  .mobil-container {
+    margin: 5% 3%; } }
 
 @media only screen and (min-width: 768px) {
   .accordion-footer {
+    display: none; }
+  .carousel-image-text {
     display: none; } }

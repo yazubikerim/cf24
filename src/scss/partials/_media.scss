@@ -264,7 +264,9 @@
 
 @media only screen and(max-width: 768px){
     
-
+    .carousel-image-top-text{
+        margin-left: 20px;
+    }
         .carousel-image-2,.carousel-image-3,.carousel-image-4,.carousel-image-5{
             display: none; }
 
@@ -275,6 +277,8 @@
             .carousel-image-1{
                 
                 height: 550px;
+                background-size: 259px; 
+                background-position: right 45% top 15%;
                 .carousel-image-text{
                     
                     
@@ -313,7 +317,8 @@
             button:focus{
                 outline: none !important;
             }
-        
+            .mobil-container {
+                margin: 5% 3%;}
 
         }
 
@@ -322,6 +327,8 @@
             display: none;
             
         }
-        
+        .carousel-image-text{display: none;}
+      
+           
     
     }
