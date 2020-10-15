@@ -4,10 +4,11 @@
   "description": "Welcome to the Gulp4 SaSS Bootstrap setup using BrowserSync to Automate your changes",
   "main": "gulpfile.js",
   "dependencies": {
+    "@popperjs/core": "^2.5.3",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "bootstrap": "^4.3.1"
+    "gulp-sass": "^4.0.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,7 +16,6 @@
   },
   "repository": {
     "type": "git",
-    
     "url": "https://github.com/yazubikerim/cf24.gitecho "
   },
   "author": "Amy Lily",

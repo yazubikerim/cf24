@@ -1,0 +1,156 @@
+/* left-sidebar */
+.dropbtn {
+    
+    color: black;
+    
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    min-width: 260px;
+    overflow: auto;
+  
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 5px 0px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  
+    line-height: 18px;
+    font-size:15px;
+  }
+  .dropdown-content .selam span{
+    color: black;
+    margin-left: 20px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .selam span:hover {border-color: #1a1a1a; }
+  
+  .show {display: block; box-shadow: none !important;}
+  
+  .cc{font-size:15px; font-weight: bold;}
+
+/* catagory */
+
+.cat-title{
+    font-size: 37px;
+    letter-spacing: 1px;
+
+    font-weight: 700;
+}
+.cat-button{
+    margin-top: 1%;
+    
+  
+}
+.dropdown{
+
+    margin-right: 15px;
+}
+.dropdown-toggle:focus{
+    border: solid 2px black !important;
+    box-shadow: unset  !important;
+    
+}
+.btn-default{
+    border-radius: 5px;
+    background-color: white;
+    border: solid 1px grey !important;
+    width: 150px;
+}
+
+.dropdown-item{
+    letter-spacing: .5px;
+    font-size: 15px;
+    
+    padding: 0.4rem 3rem;
+}
+.show{
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.1);
+}
+
+.line-count{
+    margin-top: 20px;
+    .count{
+        padding-top: 4px;
+        text-align: center;
+    }
+    .count-artikel{
+        font-size: 14px;
+       
+    }
+}
+
+
+/*content*/
+.content-edit{
+    padding-left: 40px;
+}
+.items{
+    margin-top: 15px;
+}
+.item-product{
+    border: #e7e7e7 1px solid; 
+    height: 445px;
+    width: 285px;
+    .item-image{
+        height: 377px;
+        width: auto;
+    }
+    .item-product-footer{
+        height: 65px;
+        background-color:#f9f9f9;
+
+        .item-product-footer-content{
+            padding: 13px;
+            .item-product-footer-marke{
+                font-weight: bold;
+                line-height: 20px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+        }
+        .product-title{
+            padding-bottom: 0;
+            border-bottom-width: 0;
+            border-style: none;
+            width: 100%;
+            margin: 0 0 5px;
+            font-weight: 500;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            letter-spacing: normal;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+}
+.items-content{
+    margin-top:75px;
+}
+.items-content-end{
+    margin-top:75px;
+    margin-bottom:75px;
+}

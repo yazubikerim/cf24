@@ -46,7 +46,7 @@
     
 
 }
-.nav-container .row .col-lg-3, .col-lg-6{
+.nav-container .nav-container-2 .row .col-lg-3, .col-lg-6{
     padding-right: 0px !important;
     padding-left: 0px  !important;
 }
@@ -67,6 +67,11 @@
 
 .nav-container {
     padding: 25px 0;
+    
+}
+.nav-container-2 {
+    padding: 25px 0;
+    
 }
 
 .nav-center {
@@ -113,7 +118,7 @@
 .icon-nav
 {
 
-    margin-right: 25px;
+    margin-right: 19px;
 }
 
 .right-nav img {
@@ -340,7 +345,7 @@
         .home-banner-area{
         position: absolute;
         margin-top: 2.5%;
-        height:167px;
+        
         min-width: 500px;
         background: #fff;
         border-radius: 4px;
@@ -350,7 +355,7 @@
             .banner-text-1{
             @extend .home-banner-text-ext;
             font-size: 18px;
-            
+            padding-top: 5px;
             }
             .banner-text-2 {
                 @extend .home-banner-text-ext;
@@ -359,8 +364,8 @@
             }
             .banner-text-3 {
             @extend .home-banner-text-ext;
-            font-size: 18px;
-            
+            font-size: 19px;
+            padding-top: 6px;
             span{
                 border-bottom: $xc-black-1 2px solid;
             }
@@ -368,3 +373,17 @@
         }
     
 }
+nav.nav-container-2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background: linear-gradient(180deg,rgba(0,0,16,.05) 0,hsla(0,0%,100%,0));
+    transform: translateY(0);
+    height: 15px;
+    width: 100%;
+    transition: opacity .2s ease-in-out;
+    }
+    
+    .after-conteiner{
+        padding-bottom: 24px;
+    }

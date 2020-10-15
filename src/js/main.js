@@ -1,3 +1,13 @@
+
+window.onload=()=>{ let dropdownBtn = document.querySelector('.kg1');
+let menuContent = document.querySelector('.kg2');
+dropdownBtn.addEventListener('click',()=>{
+   if(menuContent.style.display===""){
+      menuContent.style.display="block";
+   } else {
+      menuContent.style.display="";
+   }
+})}
 //---------Navigation-----------//
 let burger = document.querySelector('.burgers');
 let menu1 = document.querySelector('.mobileMenu-1');
@@ -313,6 +323,16 @@ const slide = new Slider(fwResponsive,fwSlider,fwSliderSection,fwSliderarrowNext
 
 
 
+let dropdownBtn = document.querySelector('.menu-btn');
+let menuContent = document.querySelector('.menu-content');
+dropdownBtn.addEventListener('click',()=>{
+   if(menuContent.style.display===""){
+      menuContent.style.display="block";
+   } else {
+      menuContent.style.display="";
+   }
+})
+
 
 
 
@@ -330,4 +350,26 @@ for (i = 0; i < acc.length; i++) {
         panel.style.maxHeight = panel.scrollHeight + "px";
       } 
     });
+  }
+
+
+
+   /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          //openDropdown.classList.remove('show');
+        }
+      }
+    }
   }
