@@ -350,3 +350,42 @@
       
        
     }
+
+
+    /*herren*/
+    @media only screen and (max-width:1200px){
+        .asdasd{
+            display: none;
+        }
+        }
+ 
+
+        @media only screen and(min-width: 768px) and (max-width: 979px){
+            .item-product{
+                height: 361px;
+                width: auto;
+            }
+            .item-product .item-image {
+                height: 294px;
+                width: auto;
+            }
+        }
+
+        @media only screen and(max-width: 768px){
+            .item-product{
+                height: auto;
+                     width: 100%;
+                    }
+                    .item-product .item-image{
+                        height: auto;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+                    }
+                    .col-md-4{
+                        width: 33%;
+                    }
+
+            }
+      

@@ -7532,7 +7532,10 @@ nav.nav-container-2::after {
   width: 285px; }
   .item-product .item-image {
     height: 377px;
-    width: auto; }
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
   .item-product .item-product-footer {
     height: 65px;
     background-color: #f9f9f9; }
@@ -7792,3 +7795,29 @@ nav.nav-container-2::after {
     display: none; }
   .carousel-image-text {
     display: none; } }
+
+/*herren*/
+@media only screen and (max-width: 1200px) {
+  .asdasd {
+    display: none; } }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .item-product {
+    height: 361px;
+    width: auto; }
+  .item-product .item-image {
+    height: 294px;
+    width: auto; } }
+
+@media only screen and (max-width: 768px) {
+  .item-product {
+    height: auto;
+    width: 100%; }
+  .item-product .item-image {
+    height: auto;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .col-md-4 {
+    width: 33%; } }

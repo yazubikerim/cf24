@@ -94,7 +94,10 @@
   width: 285px; }
   .item-product .item-image {
     height: 377px;
-    width: auto; }
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
   .item-product .item-product-footer {
     height: 65px;
     background-color: #f9f9f9; }
