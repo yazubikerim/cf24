@@ -94,7 +94,7 @@
     }
     .nav-login{
         position: absolute !important;
-        right: 22% !important;
+        right: 25% !important;
         z-index:1 !important;
         margin-top: -40px !important;
     }
@@ -230,7 +230,8 @@
             position: relative;
            
             height: 258px;
-           
+            margin-right: 0;
+            margin-left: 0;
             
             
             
@@ -278,7 +279,7 @@
 @media only screen and(max-width: 768px){
     
     .carousel-image-top-text{
-        margin-left: 20px;
+        margin-left: 30px;
     }
         .carousel-image-2,.carousel-image-3,.carousel-image-4,.carousel-image-5{
             display: none; }
@@ -289,9 +290,11 @@
                 padding-left: 0px !important;}}
             .carousel-image-1{
                 
-                height: 550px;
-                background-size: 259px; 
-                background-position: right 45% top 15%;
+                height: 663px;
+                background-size: 310px; 
+                background-position: right 50% top 0%;
+                border-right: #e7e7e7 1px solid;
+                border-top: #e7e7e7 1px solid;
                 .carousel-image-text{
                     
                     
@@ -317,7 +320,7 @@
         @media only screen and(max-width: 768px){
 
             .footer-image-text-area{
-                width: 95% !important;
+                width: 93% !important;
                 height: auto !important;
                 
                 
@@ -369,6 +372,8 @@
                 height: 294px;
                 width: auto;
             }
+          
+
         }
 
         @media only screen and(max-width: 768px){
@@ -378,14 +383,44 @@
                     }
                     .item-product .item-image{
                         height: auto;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+                    width: 100%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
                     }
                     .col-md-4{
                         width: 33%;
                     }
 
             }
-      
+            @media only screen and(max-width: 979px){
+                .cat-button{
+                    display: none;
+                }
+                .line-count{
+                    display: none;
+                }
+                .filter-cat{
+                   padding-left: 53%;
+                    .filter-img{
+                        height: 24px;
+                        margin-right: 1%;
+                    }
+                }
+            }
+
+            @media only screen and(min-width: 979px){
+                .filter-cat{
+                    display: none;
+                }
+            }
+
+            @media only screen and(min-width: 979px) and (max-width:1200px){
+                .cat-button{
+                    margin-left: 9px;
+
+                }
+                .dropdown{
+                    margin-right: 0;
+                }
+            }

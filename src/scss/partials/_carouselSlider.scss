@@ -14,6 +14,8 @@
         border-bottom: #e7e7e7 1px solid;
         height: 257px;
         padding-top: 90px; 
+        margin-right: -15px;
+         margin-left: -15px;
         
         
         .image-style-text-1{
@@ -43,6 +45,17 @@
         
         width: 500px;   
         .image-style-model-1{
+            display: block;
+            background: url(../images/chino-cargo-mini1.jpg);
+            background-size: 170px;
+            
+            background-repeat: no-repeat;
+            background-position: right 45% bottom 15%;
+            
+            
+        height: 327px;
+        }
+        .image-style-model-3{
             display: block;
             background: url(../images/chino-cargo-mini1.jpg);
             background-size: 170px;
