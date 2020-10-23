@@ -12,12 +12,16 @@
     color: $xc-black-1;
 }
 
+.text-image-carousel{
+    
+    display: block;
+    height: 327px;
+    cursor: pointer;
+    &:hover {
+
+        filter: brightness(0.95);
+    }
+}
 .carousel-image{
-  
-    
-    
-    border-left: #e7e7e7 1px solid;
-    border-bottom: #e7e7e7 1px solid;
-   
-    
+    @include border(none,none,#e7e7e7 1px solid,#e7e7e7 1px solid)   
 }

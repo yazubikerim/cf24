@@ -6493,9 +6493,18 @@ template {
   margin: 10px 30px;
   color: #1a1a1a; }
 
+.text-image-carousel, .c-image-style-content__is-model__has-1, .c-image-style-content__is-model__has-2 {
+  display: block;
+  height: 327px;
+  cursor: pointer; }
+  .text-image-carousel:hover, .c-image-style-content__is-model__has-1:hover, .c-image-style-content__is-model__has-2:hover {
+    filter: brightness(0.95); }
+
 .carousel-image, .carousel-image-1, .carousel-image-2, .carousel-image-3, .carousel-image-4, .carousel-image-5 {
-  border-left: #e7e7e7 1px solid;
-  border-bottom: #e7e7e7 1px solid; }
+  border-top: none;
+  border-right: none;
+  border-bottom: #e7e7e7 1px solid;
+  border-left: #e7e7e7 1px solid; }
 
 * {
   font-family: sans-serif;
@@ -7290,78 +7299,63 @@ nav.nav-container-2::after {
   -ms-user-select: none;
   user-select: none; }
 
-.image-style-content {
+/* Text-Image Carousel */
+.c-image-style-content {
   margin-top: 30px; }
-  .image-style-content .image-style-text {
+  .c-image-style-content__is-text {
     display: block;
     background-color: #f6f6f6;
     border-top: #e7e7e7 1px solid;
-    border-left: #e7e7e7 1px solid;
-    border-right: #e7e7e7 1px solid;
+    border-right: none;
     border-bottom: #e7e7e7 1px solid;
+    border-left: #e7e7e7 1px solid;
     height: 257px;
     padding-top: 90px;
     margin-right: -15px;
     margin-left: -15px; }
-    .image-style-content .image-style-text .image-style-text-1 {
+    .c-image-style-content__is-text__has-1 {
       display: flex;
       margin-bottom: 10px;
       font-size: 20px;
       line-height: 1.333;
       margin: 9px; }
-    .image-style-content .image-style-text .image-style-text-2 {
+    .c-image-style-content__is-text__has-2 {
       display: block;
       text-decoration: underline;
       font-weight: 700;
-      font-size: 14px; }
-  .image-style-content .image-style-border {
-    display: block;
-    border-top: #e7e7e7 1px solid;
-    border-left: #e7e7e7 1px solid;
-    border-bottom: #e7e7e7 1px solid;
-    width: 500px; }
-    .image-style-content .image-style-border .image-style-model-1 {
-      display: block;
-      background: url(../images/chino-cargo-mini1.jpg);
-      background-size: 170px;
-      background-repeat: no-repeat;
-      background-position: right 45% bottom 15%;
-      height: 327px; }
-  .image-style-content .image-style-model-2 {
-    display: block;
-    background: url(../images/chino-cargo-mini2.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+      font-size: 14px;
+      cursor: pointer; }
+  .c-image-style-content__is-model__has-1 {
+    background-image: url("../../images/chino-cargo-mini1.jpg");
     background-position: right 45% bottom 15%;
-    display: inline-block;
-    border-top: #e7e7e7 1px solid;
-    border-left: #e7e7e7 1px solid;
-    border-bottom: #e7e7e7 1px solid;
-    border-right: #e7e7e7 1px solid; }
-  .image-style-content .image-style-model-tall {
-    background: url(../images/chino-cargo-big-image.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: 170px;
+    border-top: #e7e7e7 1px solid;
+    border-right: none;
+    border-bottom: #e7e7e7 1px solid;
+    border-left: #e7e7e7 1px solid; }
+  .c-image-style-content__is-model__has-2 {
+    background-image: url("../../images/chino-cargo-mini2.jpg");
+    background-position: right 45% bottom 15%;
+    background-repeat: no-repeat;
+    background-size: 170px;
+    border-top: #e7e7e7 1px solid;
+    border-right: none;
+    border-bottom: #e7e7e7 1px solid;
+    border-left: #e7e7e7 1px solid; }
+  .c-image-style-content__is-tall {
+    background-image: url("../../images/chino-cargo-big-image.jpg");
     background-position: right 35% bottom 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top: #e7e7e7 1px solid;
     border-right: #e7e7e7 1px solid;
     border-bottom: #e7e7e7 1px solid;
-    height: 100%;
-    width: 100%;
-    height: 586px; }
-
-.image-style-model-tall:hover {
-  filter: brightness(0.95); }
-
-.image-style-model-2:hover {
-  filter: brightness(0.95) !important; }
-
-.image-style-border:hover {
-  filter: brightness(0, 99) !important;
-  backdrop-filter: brightness(0.95); }
-
-.image-style-model-1:hover {
-  filter: brightness(0.95); }
+    border-left: #e7e7e7 1px solid;
+    cursor: pointer;
+    height: 584px; }
+    .c-image-style-content__is-tall:hover {
+      filter: brightness(0.95); }
 
 /** 2.image **/
 .products-section {

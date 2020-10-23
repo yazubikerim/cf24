@@ -1,129 +1,63 @@
-
-.image-style-content { 
+/* Text-Image Carousel */
+.c-image-style-content {
     margin-top: 30px;
-  
-    
-    
-   
-    .image-style-text{
+
+    &__is-text {
         display: block;
         background-color: $xc-grey-1;
-        border-top: #e7e7e7 1px solid;
-        border-left: #e7e7e7 1px solid;
-        border-right: #e7e7e7 1px solid;
-        border-bottom: #e7e7e7 1px solid;
+        @include border(#e7e7e7 1px solid,none,#e7e7e7 1px solid,#e7e7e7 1px solid)
         height: 257px;
-        padding-top: 90px; 
+        padding-top: 90px;
         margin-right: -15px;
-         margin-left: -15px;
-        
-        
-        .image-style-text-1{
+        margin-left: -15px;
+
+        &__has-1 {
             display: flex;
             margin-bottom: 10px;
             font-size: 20px;
             line-height: 1.333;
             margin: 9px;
-
-
         }
-        .image-style-text-2{
+
+        &__has-2 {
             display: block;
             text-decoration: underline;
             font-weight: 700;
             font-size: $font-size;
-
-        }
-
-    }
-
-    .image-style-border{
-       display: block;
-        border-top: #e7e7e7 1px solid;
-        border-left: #e7e7e7 1px solid;
-        border-bottom: #e7e7e7 1px solid;
-        
-        width: 500px;   
-        .image-style-model-1{
-            display: block;
-            background: url(../images/chino-cargo-mini1.jpg);
-            background-size: 170px;
-            
-            background-repeat: no-repeat;
-            background-position: right 45% bottom 15%;
-            
-            
-        height: 327px;
-        }
-        .image-style-model-3{
-            display: block;
-            background: url(../images/chino-cargo-mini1.jpg);
-            background-size: 170px;
-            
-            background-repeat: no-repeat;
-            background-position: right 45% bottom 15%;
-            
-            
-        height: 327px;
+            cursor: pointer;
         }
     }
-        
 
-    
-    .image-style-model-2{
-        display: block;
-        background: url(../images/chino-cargo-mini2.jpg);
-        background-size: 100% 100%;
-        
-        background-repeat: no-repeat;
-        background-position: right 45% bottom 15%;
-        display: inline-block;
-        
-        
-        border-top: #e7e7e7 1px solid;
-        border-left: #e7e7e7 1px solid;
-        border-bottom: #e7e7e7 1px solid;
-        border-right: #e7e7e7 1px solid;
+    &__is-model {
+        &__has-1 {
+            @include background ("../../images/chino-cargo-mini1.jpg",right 45% bottom 15%,no-repeat,170px);
+            @include border(#e7e7e7 1px solid,none,#e7e7e7 1px solid,#e7e7e7 1px solid)
+            @extend .text-image-carousel;     
+        }
+
+        &__has-2 {             
+            @include background ("../../images/chino-cargo-mini2.jpg",right 45% bottom 15%,no-repeat,170px);
+            @include border(#e7e7e7 1px solid,none,#e7e7e7 1px solid,#e7e7e7 1px solid)    
+            @extend .text-image-carousel;        
+        }
     }
 
-    .image-style-model-tall {
-        
-      
-        background: url(../images/chino-cargo-big-image.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right 35% bottom 15%;
-        border-top: #e7e7e7 1px solid;
-        border-right: #e7e7e7 1px solid;
-        border-bottom: #e7e7e7 1px solid;
-        height: 100%;
-        width: 100%;
-        height: 586px;
+    &__is-tall {
+        @include background ("../../images/chino-cargo-big-image.jpg",right 35% bottom 15%,no-repeat,cover);
+        @include border(#e7e7e7 1px solid,#e7e7e7 1px solid,#e7e7e7 1px solid,#e7e7e7 1px solid)     
+        cursor: pointer;
+        height: 584px;
+ 
+        &:hover {
+            filter: brightness(0.95);
+        }
     }
 }
-.image-style-model-tall:hover{
-    filter: brightness(0.95);
-}
-.image-style-model-2:hover{
-    filter: brightness(0.95) !important;
-   
-}
-.image-style-border:hover{
-    filter: brightness(0,99) !important;
-    
-    backdrop-filter: brightness(0.95);
-   
-}
-.image-style-model-1:hover{
-    filter: brightness(0.95);
-}
-
 /** 2.image **/
-
 .products-section{
     margin-top: 51px;
     width: 100%;
-    
+      
         .products-section-title{
             margin-bottom: 30px;
             display: block;
@@ -161,8 +95,7 @@
     color: #1a1a1a;
     font-weight: 700;
     line-height: 1.4;
-    font-size: 28px;       
-        
+    font-size: 28px;
     }
     
     .carousel-image-1{
