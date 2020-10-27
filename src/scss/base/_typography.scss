@@ -1,19 +1,46 @@
-%heading {
-    font-family: $font-family;
-    font-weight: 400;
-}
+
 $font-family: sans-serif;
 $font-size:14px;
 $font-color:rgb(25,25,25);
 
+%heading {
+    font-family: $font-family;
+    font-weight: 400;
+}
 
-$default-font-size: 1.6rem;
+/* Rem Font */
+$default-font:1rem;//1rem=16px
+$mini-font:0.7rem;//1rem=16px==11.2px
+$small-font:0.8rem;//1rem=16px==12.8px
+$medium-font:0.9rem;//1rem=16px==14.4px
+$medium-2-font:1.1rem;//1rem=16px==17.6px
+$large-font:1.3rem; //1rem=16px==20.8px
+$big-font:1.5rem; //1rem=16px==24px
+$exta-big-font:1.7rem;//1rem=16px==27.2px
+
+
+/* Em Spacing */
+$mini-spacing:0.4em;//defealt em=6,4px
+$small-spacing:0.6em;//defealt em=9,6px
+$medium-spacing:0.8em;//defealt em=12,8px
+$defeult-spacing:1em;//defealt em=16px
+$large-spacing:1.2em;//defealt em=19,2px
+$big-spacing:1.5em;//defealt em=24px
+$exta-spacing:2em;//defealt em=32px
+
+$mini-blok-spacing:2.5em;//defealt em=40px
+$small-blok-spacing:3em;//defealt em=48px
+$medium-blok-spacing:3.5em;//defealt em=56px
+$large-blok-spacing:4em;//defealt em=64px
+$big-blok-spacing:4.5em;//defealt em=72px
+$exta-blok-spacing:5em;//defealt em=80px
 
 .heading-1 {
     @extend %heading;
-    font-size: 4.5rem;
-    color: $color-grey-light-1;
-    line-height: 1;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -.8px;
+    line-height: 1.125;
 }
 
 .heading-2 {
@@ -22,14 +49,14 @@ $default-font-size: 1.6rem;
     font-style: italic;
     line-height: 1;
 
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &--light { color: $xc-color-grey-light-1; }
+    &--dark { color: $xc-color-grey-dark-1; }
 }
 
 .heading-3 {
     @extend %heading;
     font-size: 1.6rem;
-    color: $color-primary;
+    color: $xc-color-black-1;
     text-transform: uppercase;
 }
 
@@ -37,6 +64,6 @@ $default-font-size: 1.6rem;
     @extend %heading;
     font-size: 1.9rem;
 
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &--light { color: $xc-color-grey-light-1; }
+    &--dark { color: $xc-color-grey-dark-1; }
 }

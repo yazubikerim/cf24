@@ -1,85 +1,80 @@
-.footer-image-contact{
+/* Footer Image & Email Content */
+.footer-image-contact {
     position: relative;
     display: block;
-margin-top: 75px;
-height: 500px;
-width: auto;
+    margin-top: $big-blok-spacing;
+    height: 500px;
+    width: auto;
+    @include background("../../../images/footer-image.jpg", right 100% bottom 70%, no-repeat, cover);
 
-background-image: url(../../../images/footer-image.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: 100% -20px;
-
-    .footer-image-text-area{
+    &__text-area {
         position: absolute;
-        margin-top: 40px;
+        margin-top: $mini-blok-spacing;
         height: 281px;
         width: 550px;
-        background-color: white;
-        border: 1px solid #e7e7e7;
+        background-color: $xc-color-defeult-white;
+        border: 1px solid $xc-color-grey-light-7;
         border-radius: 4px;
 
-            .footer-area-content{
-                display: block;
-                position: relative   ;
-                margin: 6.7% 5%;
-                
+        &__content {
+            display: block;
+            position: relative;
+            margin: 6.7% 5%;
 
-                .title-1{
-                    font-size: 26px;
-                    font-weight: 700;
-                    letter-spacing: -.8px;
-                    line-height: 1.125;
-                    margin-bottom: 25px;
-                }
-                .sub-text{
-                    font-size: 16px;
-                    line-height: 1.2;
-                    margin-bottom: 26px;
-                }
-
-
-                .email-text{
-                    line-height: 1.5;
-                    font-weight: 700;
-                    color: #1a1a1a;
-                    
-                     margin-bottom: 10px
-                    
-                }
-                .newsletter-button{
-                    background-color: $xc-black-1;
-                    color: $xc-grey-1;
-                    width: 100%;
-                    height: 100%;
-                    
-                }
-
-                .mini-text{
-                    font-size: 12px;
-                    margin-top: 17px;
-                }
-            
+            &--title {
+                font-size: $exta-big-font;
+                font-weight: 700;
+                letter-spacing: -.8px;
+                line-height: 1.125;
+                margin-bottom: 1em;
             }
-    }
 
+            &--subtext {
+                font-size: $default-font;
+                line-height: 1.2;
+                margin-bottom: $big-spacing;
+            }
+
+            &--emailtext {
+                line-height: 1.5;
+                font-weight: 700;
+                color: $xc-color-black-1;
+                margin-bottom: $small-spacing;
+
+            }
+
+            &--button {
+                background-color: $xc-color-black-1;
+                color: $xc-color-grey-light-1;
+                width: 100%;
+                height: 100%;
+            }
+
+            &--minitext {
+                font-size: $mini-font;
+                margin-top: 1.5em;
+            }
+
+        }
+    }
 }
 
+/* Footer Description */
+.footer-description {
 
-.footer-description{
+    margin: $exta-spacing 0px;
 
-    margin: 32px 0px;
+    &__is-title {
+        font-size: $exta-big-font;
+        margin-bottom: 1rem;
+        line-height: 36px;
+    }
 
-        .footer-title{
-            font-size: 28px;
-            margin-bottom: 26px;
-            line-height: 36px;
-        }
-        .footer-text{
-            font-size: 14px;
-            line-height: 1.2;
-            margin-bottom: 16px;
-            color: black;
-        }
+    &__is-text {
+        font-size: $medium-font;
+        line-height: 1.2;
+        margin-bottom: 1.2em;
+        color: $xc-color-defeult-black;
+    }
 
 }

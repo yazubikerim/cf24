@@ -1,7 +1,7 @@
 
 
 .header-top {
-    background-color: $xc-grey-1;
+    background-color:$xc-color-grey-light-2;
     height: 32px;
 
 
@@ -13,7 +13,7 @@
                 @extend .hedar-text-ext;
                 text-align: start;
                 padding-bottom: 3px;
-                border-bottom: $xc-black-1 1px solid;
+                border-bottom: $xc-color-black-1 1px solid;
             }
 
             ;
@@ -319,18 +319,8 @@
     margin-left: 15px;
 }
 
-/**particul son **/
-/* .nav-top {
-    background-color: blue;
-    height: 95px;
-    display: flex;
 
-        .nav-top-menu {
-            display: flex;
-        }
 
-    
-} */
 
 .home-top-banner{
     position: relative;
@@ -367,7 +357,7 @@
             font-size: 19px;
             padding-top: 6px;
             span{
-                border-bottom: $xc-black-1 2px solid;
+                border-bottom: $xc-color-black-1 2px solid;
             }
             }
         }

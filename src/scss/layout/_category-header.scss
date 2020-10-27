@@ -1,0 +1,51 @@
+.cat-title {
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.cat-button {
+    margin-top: 1%;
+    margin-left: 15px;
+}
+
+.dropdown {
+    margin-right: 15px;
+
+    .btn-default {
+        border-radius: 5px;
+        background-color: $xc-color-defeult-white;
+        border: solid 1px $xc-color-grey-dark-1 !important;
+        width: 150px;
+
+        .dropdown-item {
+            letter-spacing: .5px;
+            font-size: $medium-font;
+            padding: 0.4rem 3rem;
+        }
+
+    }
+
+    .dropdown-toggle:focus {
+        border: solid 2px $xc-color-black-1 !important;
+        box-shadow: unset !important;
+    }
+}
+
+.show {
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+}
+
+.line-count {
+    margin-top: 20px;
+
+    .count {
+        padding-top: 4px;
+        text-align: center;
+    }
+
+    .count-artikel {
+        font-size: $medium-font;
+    }
+}

@@ -1,158 +1,135 @@
-
-
-.footer-Area{
-    
-    background-color: #f6f6f6;
+.footer-Area {
+    background-color: $xc-color-grey-light-2;
     height: 65px;
-    
-    
-    .nav-icon{
+
+    .nav-icon {
         max-width: 15px;
-        
         margin-left: 50%;
         padding-top: 17px;
-          
-          
-        }
-    
-    .area-text{
-            
-   
-        font-size: 13px;
+    }
+
+    .area-text {
+        font-size: $small-font;
         font-weight: 400;
-       
-        
     }
 }
 
-.footer-content{
-
-    background-color: $xc-footer-grey-1;
+.footer-content {
+    background-color: $xc-color-grey-light-1;
     height: 547px;
     width: 100%;
-    
-        .footer-nav{
-            
-            padding: 2.3% 0%;
-            
-           .footer-nav-1{
-            font-size: 17px;
+
+    &__is-nav {
+        padding: 2.3% 0%;
+
+        &--has-1 {
+            font-size: $default-font;
             line-height: 3;
             font-weight: 700;
             letter-spacing: 2px;
-            color: $xc-black-1; 
-            
-          
+            color: $xc-color-black-1;
         }
 
-            .border-footer{
+        .border-footer {
+            border-left: 1px solid $xc-color-grey-dark-2;
 
-                border-left: 1px solid #49494975;
-
-                .black-text{
-                    font-weight: 700;
-                    color: black;
-                }
-                .footer-icon{
-                    width: 24px;
-                    float: left;
-                    margin-right: 10px;
-    
-                }
-            }
-            
-            .footer-nav-2{
-                font-size: 15.2px;
-                line-height: 1.1;
+            .black-text {
+                font-weight: 700;
+                color: $xc-color-defeult-black;
             }
 
-            .footer-nav-3{
-                padding-top: 67px;
-                font-size: 14px;
-                line-height: 1;
+            .footer-icon {
+                width: 24px;
+                float: left;
+                margin-right: 10px;
             }
-            .footer-nav-4{
-                font-size: 15.2px;
-                line-height: 1.1;
-                width: 270px;
-               
-            }
-            .footer-nav-5{
-                
-                font-size: 14px;
-                line-height: 1.5;
-                width: 320px;
-               
-                .ssl{
-                   
-                    margin-left: 10px;
-                }
-            }
-           
-           
         }
+
+        &--has-2 {
+            font-size: $medium-font;
+            line-height: 1.1;
+        }
+
+        &--has-3 {
+            padding-top: 67px;
+            font-size: $medium-font;
+            line-height: 1;
+        }
+
+        &--has-4 {
+            font-size: $default-font;
+            line-height: 1.5;
+            width: 270px;
+
+        }
+
+        &--has-5 {
+            font-size: $medium-font;
+            line-height: 1.5;
+            width: 325px;
+
+            .ssl {
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
-
-.copyright-content{
+.copyright-content {
     display: flex;
     height: 65px;
-    color: white;
-    font-size: 14px;
-    
-    background-color: #494949;
-
-
+    color: $xc-color-defeult-white;
+    font-size: $medium-font;
+    background-color: $xc-color-grey-dark-2;
 }
 
-
 .accordion {
-    background-color:#e1e1e1;
-    color: black;
+    background-color: $xc-color-grey-light-6;
+    color: $xc-color-defeult-black;
     cursor: pointer;
     padding: 16px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 13px;
+    font-size: $small-font;
     font-weight: bold;
     transition: 0.4s;
     margin-top: 1px;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  .accordion:after {
+}
+
+.active,
+.accordion:hover {
+    background-color: $xc-color-grey-light-5;
+}
+
+.accordion:after {
     content: '\002B';
-    color: black;
+    color: $xc-color-defeult-black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: $medium-2-font;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
+}
+
+.active:after {
     content: "\2212";
-  }
-  
-  .panel {
+}
+
+.panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: $xc-color-defeult-white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
 
+.accordion-footer-nav1 {
+    margin-top: 23px;
+    font-size: $medium-font;
+    cursor: pointer;
 
-  .accordion-footer-nav1{
-      margin-top: 23px;
-      font-size: 14px;
-      cursor: pointer;
-     
-      &:hover{
+    &:hover {
         text-decoration: underline;
     }
-  }
+}

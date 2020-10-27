@@ -295,9 +295,7 @@
                 background-position: right 50% top 0%;
                 border-right: #e7e7e7 1px solid;
                 border-top: #e7e7e7 1px solid;
-                .carousel-image-text{
-                    
-                    
+                .carousel-image-text{                   
                     width: 100%;
                     text-align: center;
                     align-items: center;
@@ -306,7 +304,7 @@
                     
                     &:hover{
                       
-                        background-color:$xc-footer-grey-1;
+                        background-color:$xc-color-grey-light-6;
                     }
                 }
             }
@@ -319,7 +317,7 @@
 
         @media only screen and(max-width: 768px){
 
-            .footer-image-text-area{
+            .footer-image-contact__text-area{
                 width: 93% !important;
                 height: auto !important;
                 
