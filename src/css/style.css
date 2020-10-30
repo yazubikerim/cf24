@@ -6608,6 +6608,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .nav-container-2 {
   padding: 25px 0; }
+  .nav-container-2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 16, 0.05) 0, rgba(255, 255, 255, 0));
+    transform: translateY(0);
+    height: 15px;
+    width: 100%;
+    transition: opacity .2s ease-in-out; }
 
 .nav-center {
   font-size: 14px;
@@ -6845,12 +6854,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .home-top-banner {
   position: relative;
   height: 300px;
-  background-image: url(../../images/cf24-homebanner.jpg);
   display: block;
   width: 100%;
-  background-size: cover;
+  background-image: url("../../images/cf24-homebanner.jpg");
+  background-position: right 35% bottom 15%;
   background-repeat: no-repeat;
-  background-position: right 35% bottom 15%; }
+  background-size: cover; }
   .home-top-banner .home-banner-area {
     position: absolute;
     margin-top: 2.5%;
@@ -6860,25 +6869,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
     padding: 15px 0;
     margin-left: -15px; }
     .home-top-banner .home-banner-area .banner-text-1 {
-      font-size: 18px;
-      padding-top: 5px; }
+      font-size: 1.1rem;
+      padding-top: 0.4em; }
     .home-top-banner .home-banner-area .banner-text-2 {
-      font-size: 28px; }
+      font-size: 1.7rem; }
     .home-top-banner .home-banner-area .banner-text-3 {
-      font-size: 19px;
-      padding-top: 6px; }
+      font-size: 1.3rem;
+      padding-top: 0.4em; }
       .home-top-banner .home-banner-area .banner-text-3 span {
         border-bottom: #1a1a1a 2px solid; }
-
-nav.nav-container-2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 16, 0.05) 0, rgba(255, 255, 255, 0));
-  transform: translateY(0);
-  height: 15px;
-  width: 100%;
-  transition: opacity .2s ease-in-out; }
 
 .after-conteiner {
   padding-bottom: 24px; }
@@ -7776,27 +7775,27 @@ nav.nav-container-2::after {
     font-size: 1.1rem;
     border: none;
     cursor: pointer; }
-    .dropdown .dropbtn .dropdown-content {
-      display: none;
-      position: absolute;
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    min-width: 260px;
+    overflow: auto;
+    z-index: 1; }
+    .dropdown .dropdown-content a {
+      color: #1a1a1a;
+      padding: 5px 0px;
+      display: block;
       text-decoration: none;
-      min-width: 260px;
-      overflow: auto;
-      z-index: 1; }
-      .dropdown .dropbtn .dropdown-content a {
-        color: #1a1a1a;
-        padding: 5px 0px;
-        display: block;
-        text-decoration: none;
-        border-bottom: 2px solid transparent;
-        line-height: 18px;
-        font-size: 0.9rem; }
-      .dropdown .dropbtn .dropdown-content .cat-btn-text span {
-        color: #1a1a1a;
-        margin-left: 20px;
-        border-bottom: 2px solid transparent; }
-        .dropdown .dropbtn .dropdown-content .cat-btn-text span:hover {
-          border-color: #1a1a1a; }
+      border-bottom: 2px solid transparent;
+      line-height: 18px;
+      font-size: 0.9rem; }
+    .dropdown .dropdown-content .cat-btn-text span {
+      color: #1a1a1a;
+      margin-left: 20px;
+      border-bottom: 2px solid transparent; }
+      .dropdown .dropdown-content .cat-btn-text span:hover {
+        border-color: #1a1a1a; }
 
 .show {
   display: block;
@@ -7854,36 +7853,36 @@ nav.nav-container-2::after {
   border: #e7e7e7 1px solid;
   height: 445px;
   width: 285px; }
-  .item-product .item-image {
+  .item-product__is-image {
     height: 377px;
     width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto; }
-  .item-product .item-product-footer {
+  .item-product__footer-content {
     height: 65px;
     background-color: #f9f9f9; }
-    .item-product .item-product-footer .item-product-footer-content {
+    .item-product__footer-content--section {
       padding: 13px; }
-      .item-product .item-product-footer .item-product-footer-content .item-product-footer-marke {
+      .item-product__footer-content--section__is-brand {
         font-weight: bold;
         line-height: 20px;
         font-size: 14px;
         font-weight: 600; }
-    .item-product .item-product-footer .product-title {
-      padding-bottom: 0;
-      border-bottom-width: 0;
-      border-style: none;
-      width: 100%;
-      margin: 0 0 5px;
-      font-weight: 500;
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      letter-spacing: normal;
-      font-size: 12px;
-      line-height: 1.5; }
+      .item-product__footer-content--section__is-title {
+        padding-bottom: 0;
+        border-bottom-width: 0;
+        border-style: none;
+        width: 100%;
+        margin: 0 0 5px;
+        font-weight: 500;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        letter-spacing: normal;
+        font-size: 12px;
+        line-height: 1.5; }
 
 .items-content {
   margin-top: 75px; }

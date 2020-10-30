@@ -1,50 +1,33 @@
-
-
 .header-top {
     background-color:$xc-color-grey-light-2;
     height: 32px;
-
-
         .header-top-left {
             text-align: start;
             padding-top: 2px;
-
             .header-top-text-left {
                 @extend .hedar-text-ext;
                 text-align: start;
                 padding-bottom: 3px;
                 border-bottom: $xc-color-black-1 1px solid;
             }
-
-            ;
         }
-
         .header-top-center {
             text-align: center;
             padding-top: 2px;
-
             .header-top-text-center {
                 @extend .hedar-text-ext;
                 text-align: center;
             }
-
             ;
         }
-
         .header-top-right {
             text-align: end;
             padding-top: 2px;
-
             .header-top-text-right {
                 @extend .hedar-text-ext;
                 text-align: end;
-
             }
-
-            ;
         }
-    
-
 }
 .nav-container .nav-container-2 .row .col-lg-3, .col-lg-6{
     padding-right: 0px !important;
@@ -71,7 +54,16 @@
 }
 .nav-container-2 {
     padding: 25px 0;
-    
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        background: linear-gradient(180deg,rgba(0,0,16,.05) 0,hsla(0,0%,100%,0));
+        transform: translateY(0);
+        height: 15px;
+        width: 100%;
+        transition: opacity .2s ease-in-out;
+        }
 }
 
 .nav-center {
@@ -319,60 +311,43 @@
     margin-left: 15px;
 }
 
-
-
-
 .home-top-banner{
     position: relative;
     height: 300px;
-    background-image: url(../../images/cf24-homebanner.jpg);
     display: block;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right 35% bottom 15%;
-    
+    @include background ("../../images/cf24-homebanner.jpg", right 35% bottom 15%, no-repeat, cover);
+  
         .home-banner-area{
         position: absolute;
         margin-top: 2.5%;
-        
         min-width: 500px;
-        background: #fff;
+        background: $xc-color-defeult-white;
         border-radius: 4px;
         padding: 15px 0;
         margin-left: -15px;
                 
             .banner-text-1{
             @extend .home-banner-text-ext;
-            font-size: 18px;
-            padding-top: 5px;
+            font-size: $medium-2-font;
+            padding-top: $mini-spacing;
             }
             .banner-text-2 {
-                @extend .home-banner-text-ext;
-            font-size: 28px;
+            @extend .home-banner-text-ext;
+            font-size: $exta-big-font;
         ;
             }
             .banner-text-3 {
             @extend .home-banner-text-ext;
-            font-size: 19px;
-            padding-top: 6px;
+            font-size: $large-font;
+            padding-top: $mini-spacing;
             span{
                 border-bottom: $xc-color-black-1 2px solid;
             }
             }
         }
-    
 }
-nav.nav-container-2::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    background: linear-gradient(180deg,rgba(0,0,16,.05) 0,hsla(0,0%,100%,0));
-    transform: translateY(0);
-    height: 15px;
-    width: 100%;
-    transition: opacity .2s ease-in-out;
-    }
+
     
     .after-conteiner{
         padding-bottom: 24px;
