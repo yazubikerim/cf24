@@ -225,37 +225,31 @@
         }
     }}
 
-    .image-style-content{
-        .image-style-text{
+    .c-image-style-content{
+        &__is-text{
             position: relative;
-           
             height: 258px;
             margin-right: 0;
             margin-left: 0;
             
-            
-            
-            .image-style-text-1{
-               
-               
+            &__has-1{             
                 text-align: center;
-                
             }
             
 
         }
-        .image-style-model{
+        &__is-model{
             display: none;
-            .image-style-model-1{
+            &__has-1{
             display: none;
         }
-        .image-style-model-2{
+        &__has-2{
             display: none;
             
         }
 
                  }
-        .image-style-model-tall{
+        &__is-tall{
             
             width: 50%;
             height: 258px; }
@@ -335,7 +329,7 @@
             }
             .mobil-container {
                 margin: 5% 3%;}
-                .image-style-content .image-style-model-tall{
+                .c-image-style-content__is-tall{
                     background-size: 260px;
                 }
             
@@ -365,11 +359,11 @@
             .item-product{
                 height: 361px;
                 width: auto;
-            }
-            .item-product .item-image {
+           
+            &__is-image{
                 height: 294px;
                 width: auto;
-            }
+            } }
           
 
         }
@@ -378,14 +372,15 @@
             .item-product{
                 height: auto;
                      width: 100%;
-                    }
-                    .item-product .item-image{
-                        height: auto;
+                   
+                    &__is-image{
+                    height: auto;
                     width: 100%;
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
                     }
+                }
                     .col-md-4{
                         width: 33%;
                     }
