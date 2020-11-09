@@ -7865,8 +7865,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
     top: 43%; }
   .arrowDivPrev {
     top: 43%; }
-  .container {
-    max-width: 97%; }
   .slide5 {
     margin-left: 30px; } }
 
@@ -7890,9 +7888,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     top: 45%;
     left: 89%; }
   .arrowDivPrev {
-    top: 43%; }
-  .container {
-    max-width: 94%; } }
+    top: 43%; } }
 
 @media only screen and (max-width: 768px) {
   .home-top-banner {
@@ -7936,24 +7932,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @media only screen and (max-width: 768px) {
   .carousel-image-top-text {
     margin-left: 30px; }
-  .carousel-image-2, .carousel-image-3, .carousel-image-4, .carousel-image-5 {
+  .c-carousel-image--has-2, .c-carousel-image--has-3, .c-carousel-image--has-4, .c-carousel-image--has-5 {
     display: none; }
   .mobil-container .col-md-6 {
     padding-right: 0px !important;
     padding-left: 0px !important; }
-  .carousel-image-1 {
+  .c-carousel-image--has-1 {
     height: 663px;
     background-size: 310px;
     background-position: right 50% top 0%;
     border-right: #e7e7e7 1px solid;
     border-top: #e7e7e7 1px solid; }
-    .carousel-image-1 .carousel-image-text {
+    .c-carousel-image--has-1 .c-carousel-image__is-text {
       width: 100%;
       text-align: center;
       align-items: center;
       padding: 20px 0;
       font-size: 20px; }
-      .carousel-image-1 .carousel-image-text:hover {
+      .c-carousel-image--has-1 .c-carousel-image__is-text:hover {
         background-color: #e1e1e1; } }
 
 @media only screen and (max-width: 768px) {
@@ -7975,12 +7971,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @media only screen and (min-width: 768px) {
   .accordion-footer {
     display: none; }
-  .carousel-image-text {
+  .c-carousel-image__is-text {
     display: none; } }
 
 /*herren*/
 @media only screen and (max-width: 1200px) {
-  .asdasd {
+  .left-sidebar {
     display: none; } }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
