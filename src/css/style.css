@@ -7588,7 +7588,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-weight: bold;
         line-height: 20px;
         font-size: 14px;
-        font-weight: 600; }
+        font-weight: 600;
+        padding-left: 10px;
+        padding-right: 9px; }
       .item-product__footer-content--section__is-title {
         padding-bottom: 0;
         border-bottom-width: 0;
@@ -8009,7 +8011,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     padding-left: 53%; }
     .filter-cat .filter-img {
       height: 24px;
-      margin-right: 1%; } }
+      margin-right: 1%; }
+  .after-conteiner {
+    padding-bottom: 0; } }
 
 @media only screen and (min-width: 979px) {
   .filter-cat {
