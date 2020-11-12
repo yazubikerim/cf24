@@ -129,6 +129,17 @@
     .nav-search-mobile{
         left: 18% !important;
     }
+
+    .items-content {
+        margin-top: 0;}
+
+        .items-content-end {
+            margin-top: 0;
+            margin-bottom: 0;}
+
+            .mobil-spacing{
+                margin-top: 30px;
+            }
 }
 
 
@@ -175,7 +186,7 @@
         top:46%;
     }
     .container{
-        max-width: 96%;
+        max-width: 100%;
     }
     .slide3{
         margin-left: 30px;
