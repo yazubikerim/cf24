@@ -15,11 +15,33 @@
         margin-top: $medium-spacing;
 
         &--icon{
-            margin-left: $big-spacing;
-            
+            margin-right: $defeult-spacing;
+            margin-left: $defeult-spacing;
         }
         &--search{
-            width: 1000px;
+            width: 1075px;
+            height: 63px;
         }
     }
 }
+
+.card-icon{
+    margin-right: 3%;
+}
+
+.card-header{
+    
+    font-size: $medium-2-font;
+}
+.card-spacing{
+    margin-top: 2.7%;
+}
+.card-text a{
+    font-size: $default-font;
+    color: $xc-color-black-1;
+    text-decoration: underline;
+}
+
+.card-text{
+margin-bottom: 20px;
+line-height: 1.2;}

@@ -7762,9 +7762,29 @@ ORDER: Base + typography > general layout + grid > page layout > components
     height: 65px;
     margin-top: 0.8em; }
     .search__is-content--icon {
-      margin-left: 1.5em; }
+      margin-right: 1em;
+      margin-left: 1em; }
     .search__is-content--search {
-      width: 1000px; }
+      width: 1075px;
+      height: 63px; }
+
+.card-icon {
+  margin-right: 3%; }
+
+.card-header {
+  font-size: 1.1rem; }
+
+.card-spacing {
+  margin-top: 2.7%; }
+
+.card-text a {
+  font-size: 1rem;
+  color: #1a1a1a;
+  text-decoration: underline; }
+
+.card-text {
+  margin-bottom: 20px;
+  line-height: 1.2; }
 
 @media only screen and (max-width: 768px) {
   .header-top {
