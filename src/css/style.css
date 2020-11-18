@@ -7768,6 +7768,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
       width: 1075px;
       height: 63px; }
 
+.faqs-head-text {
+  font-size: 1.7rem;
+  margin-top: 30px; }
+
+.card-body {
+  padding: 1rem; }
+
 .card-icon {
   margin-right: 3%; }
 
@@ -7775,7 +7782,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 1.1rem; }
 
 .card-spacing {
-  margin-top: 2.7%; }
+  margin-top: 3%; }
 
 .card-text a {
   font-size: 1rem;
@@ -7785,6 +7792,38 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .card-text {
   margin-bottom: 20px;
   line-height: 1.2; }
+
+.h-100 .card-body {
+  flex: 0.75 1 auto; }
+
+.last-button {
+  margin-inline-start: 15px;
+  margin-inline-end: 15px; }
+
+.hr-spacing {
+  margin-top: 7%;
+  margin-bottom: 6%; }
+
+.footer-contact {
+  margin-bottom: 3%; }
+  .footer-contact__is-tel {
+    width: 400px;
+    background-color: #ececec;
+    border-color: #ececec; }
+    .footer-contact__is-tel:hover {
+      background-color: #3e3e3e;
+      color: white; }
+  .footer-contact__is-info {
+    margin-top: 3%;
+    line-height: 1.5;
+    font-size: 0.9rem; }
+
+.footer-head-text {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 3%; }
 
 @media only screen and (max-width: 768px) {
   .header-top {
@@ -8043,9 +8082,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       width: 100%;
       display: block;
       margin-left: auto;
-      margin-right: auto; }
-  .col-md-4 {
-    width: 33%; } }
+      margin-right: auto; } }
 
 @media only screen and (max-width: 979px) {
   .cat-button {
