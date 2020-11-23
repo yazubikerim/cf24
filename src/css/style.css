@@ -7850,6 +7850,39 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 18px;
   margin-bottom: 3%; }
 
+.nav__li {
+  padding: 10px 0;
+  line-height: 22px; }
+  .nav__li__a {
+    color: #1a1a1a;
+    font-size: 16px;
+    border-bottom: 0 solid #1a1a1a;
+    transition: all .15s; }
+    .nav__li__a:hover {
+      color: #1a1a1a;
+      font-weight: 700;
+      border-bottom-width: 2px;
+      text-decoration: none; }
+  .nav__li__active {
+    color: #1a1a1a;
+    font-weight: 700;
+    border-bottom-width: 2px;
+    text-decoration: none; }
+
+.help-page-content__is-head-title {
+  font-size: 28px;
+  font-weight: 700; }
+
+.help-page-content__is-title {
+  font-size: 16px;
+  border-bottom: 2px solid #1a1a1a;
+  cursor: pointer;
+  font-weight: 700;
+  color: #1a1a1a; }
+  .help-page-content__is-title:hover {
+    text-decoration: none;
+    color: #1a1a1a; }
+
 @media only screen and (max-width: 768px) {
   .header-top {
     display: none; } }

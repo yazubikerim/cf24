@@ -1,0 +1,44 @@
+.nav{
+    &__li{
+        padding: 10px 0;
+        line-height: 22px;
+     
+        &__a{
+            color: $xc-color-black-1;
+            font-size: 16px;
+            border-bottom: 0 solid #1a1a1a;
+            transition: all .15s;
+            &:hover{
+            color: $xc-color-black-1;
+            font-weight: 700;
+            border-bottom-width: 2px;
+            text-decoration: none;
+            
+            }
+        }
+
+        &__active{
+            color: $xc-color-black-1;
+            font-weight: 700;
+            border-bottom-width: 2px;
+            text-decoration: none;
+        }
+    }
+}
+.help-page-content{
+&__is-head-title{
+    font-size: 28px;
+    font-weight: 700;
+}
+&__is-title{
+    font-size: 16px;
+    border-bottom: 2px solid #1a1a1a;
+    cursor: pointer;
+    font-weight: 700;
+    color: $xc-color-black-1;
+    &:hover{
+        text-decoration: none;
+        color: $xc-color-black-1;
+    }
+}
+}
