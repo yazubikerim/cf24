@@ -6547,9 +6547,6 @@ template {
   padding: 0;
   border: 0;
   box-sizing: border-box; }
-  * .container {
-    padding-right: 0;
-    padding-left: 0; }
 
 /* abstracts */
 /*
@@ -7596,10 +7593,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .item-product {
   border: #e7e7e7 1px solid;
-  height: 445px;
-  width: 285px; }
+  height: auto;
+  width: auto; }
   .item-product__is-image {
-    height: 377px;
+    height: 277px;
     width: auto;
     display: block;
     margin-left: auto;
@@ -7826,7 +7823,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-inline-end: 15px; }
 
 .hr-spacing {
-  margin-top: 7%;
+  margin-top: 6%;
   margin-bottom: 6%; }
 
 .footer-contact {
@@ -7841,7 +7838,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .footer-contact__is-info {
     margin-top: 3%;
     line-height: 1.5;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    margin-bottom: 5%; }
 
 .footer-head-text {
   letter-spacing: 1px;
@@ -7849,6 +7847,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 3%; }
+
+.breadcrumb {
+  background-color: white;
+  padding-left: 0px; }
+  .breadcrumb .breadcrumb-item {
+    color: #1a1a1a; }
+    .breadcrumb .breadcrumb-item a {
+      color: #858484;
+      font-size: 14px; }
 
 .nav__li {
   padding: 10px 0;
@@ -7871,7 +7878,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .help-page-content__is-head-title {
   font-size: 28px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 15px; }
 
 .help-page-content__is-title {
   font-size: 16px;
@@ -7882,6 +7890,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .help-page-content__is-title:hover {
     text-decoration: none;
     color: #1a1a1a; }
+
+.help-page-content__answer {
+  margin-top: 10px;
+  line-height: 1.5;
+  margin-bottom: 30px; }
+  .help-page-content__answer--read-more {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer; }
+    .help-page-content__answer--read-more:hover {
+      color: #1a1a1a; }
+
+.image {
+  width: 13px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin-right: 9px; }
 
 @media only screen and (max-width: 768px) {
   .header-top {
@@ -8124,12 +8150,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     display: none; } }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-  .item-product {
-    height: 361px;
-    width: auto; }
-    .item-product__is-image {
-      height: 294px;
-      width: auto; } }
+  .item-product__is-image {
+    height: 228px;
+    width: auto; } }
 
 @media only screen and (max-width: 768px) {
   .item-product {
@@ -8161,6 +8184,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @media only screen and (min-width: 979px) and (max-width: 1200px) {
   .cat-button {
-    margin-left: 9px; }
+    margin-left: 4px; }
   .dropdown {
     margin-right: 0; } }

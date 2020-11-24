@@ -363,19 +363,18 @@
         }
         }
  
-
         @media only screen and(min-width: 768px) and (max-width: 979px){
+            
             .item-product{
-                height: 361px;
-                width: auto;
+            
            
             &__is-image{
-                height: 294px;
+                height: 228px;
                 width: auto;
             } }
-          
 
         }
+      
 
         @media only screen and(max-width: 768px){
             .item-product{
@@ -420,7 +419,7 @@
 
             @media only screen and(min-width: 979px) and (max-width:1200px){
                 .cat-button{
-                    margin-left: 9px;
+                    margin-left: 4px;
 
                 }
                 .dropdown{

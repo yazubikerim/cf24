@@ -1,3 +1,16 @@
+.breadcrumb{
+    background-color: white;
+    padding-left: 0px;
+    .breadcrumb-item{
+        color:$xc-color-black-1;
+        a{
+            color: #858484;
+            font-size: 14px;
+        }
+
+    }
+}
+
 .nav{
     &__li{
         padding: 10px 0;
@@ -29,6 +42,7 @@
 &__is-head-title{
     font-size: 28px;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 &__is-title{
     font-size: 16px;
@@ -41,4 +55,27 @@
         color: $xc-color-black-1;
     }
 }
+&__answer{
+    margin-top: 10px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+
+    &--read-more{
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover{
+        color: $xc-color-black-1;
+    }
+}
+    }
+}
+
+.image{
+    width: 13px;
+ -webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+margin-right: 9px;
+
 }

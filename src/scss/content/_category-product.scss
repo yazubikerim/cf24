@@ -6,10 +6,10 @@
 }
 .item-product{
     border: #e7e7e7 1px solid; 
-    height: 445px;
-    width: 285px;
+    height: auto;
+    width: auto;
     &__is-image{
-        height: 377px;
+        height: 277px;
         width: auto;
         display: block;
         margin-left: auto;
