@@ -330,9 +330,7 @@
                      margin-top: 2% !important;
                 }
             }
-            .footer-content{
-                display: none;
-            }
+            
             button:focus{
                 outline: none !important;
             }
@@ -345,11 +343,20 @@
 
         }
 
-        @media only screen and(min-width: 768px){
+        @media only screen and(min-width: 992px){
         .accordion-footer{
             display: none;
             
         }
+    }
+    @media only screen and(max-width: 992px){
+    .footer-content{
+        display: none;
+    }}
+
+
+        @media only screen and(min-width: 768px){
+        
         .c-carousel-image__is-text{display: none;}
       
        
@@ -425,4 +432,10 @@
                 .dropdown{
                     margin-right: 0;
                 }
+
+                .item-product{
+                    &__is-image{
+                        height: 238px;
+                        
+                    }}
             }

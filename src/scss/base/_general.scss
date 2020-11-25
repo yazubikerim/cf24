@@ -6,6 +6,13 @@
 
     box-sizing: border-box;
     
-
+a{
+    color: $xc-color-black-1;
+    text-decoration: none;
+    &:hover{
+        color: $xc-color-black-1;
+        
+    }
+}
     
     }

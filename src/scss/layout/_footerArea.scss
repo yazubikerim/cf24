@@ -23,7 +23,7 @@
         padding: 2.3% 0%;
 
         &--has-1 {
-            font-size: $default-font;
+            font-size: $medium-font;
             line-height: 3;
             font-weight: 700;
             letter-spacing: 2px;
@@ -73,6 +73,12 @@
             }
         }
     }
+
+    &__payment-methods{
+        margin-right: 3%;
+    }
+
+
 }
 
 .copyright-content {
@@ -132,4 +138,19 @@
     &:hover {
         text-decoration: underline;
     }
+}
+
+
+.img-res{
+width: 700px;
+@include border($xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid , $xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid,);
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 225px;
+    vertical-align: middle;
+    align-items: center;
+    
 }

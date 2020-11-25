@@ -6547,6 +6547,11 @@ template {
   padding: 0;
   border: 0;
   box-sizing: border-box; }
+  * a {
+    color: #1a1a1a;
+    text-decoration: none; }
+    * a:hover {
+      color: #1a1a1a; }
 
 /* abstracts */
 /*
@@ -7400,7 +7405,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .footer-content__is-nav {
     padding: 2.3% 0%; }
     .footer-content__is-nav--has-1 {
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 3;
       font-weight: 700;
       letter-spacing: 2px;
@@ -7431,6 +7436,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
       width: 325px; }
       .footer-content__is-nav--has-5 .ssl {
         margin-left: 10px; }
+  .footer-content__payment-methods {
+    margin-right: 3%; }
 
 .copyright-content {
   display: flex;
@@ -7481,6 +7488,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
   cursor: pointer; }
   .accordion-footer-nav1:hover {
     text-decoration: underline; }
+
+.img-res {
+  width: 700px;
+  border-top: #e7e7e7 1px solid;
+  border-right: #e7e7e7 1px solid;
+  border-bottom: #e7e7e7 1px solid;
+  border-left: #e7e7e7 1px solid; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 225px;
+  vertical-align: middle;
+  align-items: center; }
 
 /* Mobil-Section */
 .mobil-container .image-style {
@@ -7596,7 +7618,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: auto;
   width: auto; }
   .item-product__is-image {
-    height: 277px;
+    height: 338px;
     width: auto;
     display: block;
     margin-left: auto;
@@ -8129,8 +8151,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .footer-image-contact__text-area .col-sm-6 {
       min-height: 35px !important;
       margin-top: 2% !important; }
-  .footer-content {
-    display: none; }
   button:focus {
     outline: none !important; }
   .mobil-container {
@@ -8138,9 +8158,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .c-image-style-content__is-tall {
     background-size: 260px; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .accordion-footer {
-    display: none; }
+    display: none; } }
+
+@media only screen and (max-width: 992px) {
+  .footer-content {
+    display: none; } }
+
+@media only screen and (min-width: 768px) {
   .c-carousel-image__is-text {
     display: none; } }
 
@@ -8186,4 +8212,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .cat-button {
     margin-left: 4px; }
   .dropdown {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .item-product__is-image {
+    height: 238px; } }
