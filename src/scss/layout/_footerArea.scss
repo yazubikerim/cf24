@@ -141,16 +141,113 @@
 }
 
 
-.img-res{
-width: 700px;
-@include border($xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid , $xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid,);
-}
-.img-responsive{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    width: 225px;
-    vertical-align: middle;
-    align-items: center;
+
+
+
+.container{
+  
+
+.image-carousel{
     
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+            .col-md-6{
+                padding-right: 0;
+                padding-left: 0;
+                
+            }
+        }
+    }
+}
+
+
+.image-carousel {
+    &__is-top-text {
+        margin-top: 73px;
+        margin-bottom: 20px;
+        width: 100%;
+        color: $xc-color-black-1;
+        font-weight: 700;
+        line-height: 1.4;
+        font-size: $exta-big-font;
+  
+    }
+
+    &__is-border-1 {
+        display: block;
+        height: 584px;
+        width: 100%;
+        @include border($xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid, );
+        &--mobil-text{
+            @include max-tablet{
+                display: none;
+            }
+        }
+      
+    }
+
+    &__is-border-2 {
+        display: block;
+        width: 100%;
+        @include border($xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid, none, );
+        position: absolute;
+      
+  }
+  
+
+    &__is-border-3 {
+        display: block;
+        width: 100%;
+        @include border($xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid , $xc-color-grey-light-7 1px solid, none,);
+        
+  }
+
+
+    &__is-border-4 {
+        display: block;
+        width: 100%;
+        @include border(none, $xc-color-grey-light-7 1px solid , $xc-color-grey-light-7 1px solid, none,);
+        
+  }
+ 
+
+    &__is-border-5 {
+        display: block;
+        width: 100%;
+        @include border(none, $xc-color-grey-light-7 1px solid , $xc-color-grey-light-7 1px solid, none,);
+        
+  }
+ 
+
+    &__has-1{
+        display: block;
+        max-width: 100%;
+        width: auto;
+        vertical-align: middle;
+        align-items: center;
+        &:hover{
+            filter: brightness(0.95);
+            cursor: pointer;
+          }
+    }
+
+    &__has-2{
+        display: block;
+        max-width: 100%;
+        height: 290.5px;
+        width: auto;
+        vertical-align: middle;
+        align-items: center;
+        &:hover{
+            filter: brightness(0.95);
+            cursor: pointer;
+          }
+    }
+
+    &__table{
+        @include max-tablet{
+            display: none;
+        }
+    }
 }
