@@ -22,6 +22,12 @@ $desktop-width: 1200px;
   }
 }
 
+@mixin min-tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
     @content;
@@ -36,6 +42,11 @@ $desktop-width: 1200px;
 
 @mixin laptop {
   @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin max-laptop {
+  @media (max-width: #{$laptop-width}) {
     @content;
   }
 }

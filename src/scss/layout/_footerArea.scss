@@ -142,7 +142,7 @@
 
 
 
-
+/* start 5 carousel */
 
 .container{
   
@@ -176,12 +176,30 @@
 
     &__is-border-1 {
         display: block;
-        height: 584px;
+        height: auto;
         width: 100%;
+        padding-bottom: 1.2px;
         @include border($xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid, $xc-color-grey-light-7 1px solid, );
+
+    
+
         &--mobil-text{
+            @include min-tablet{
+                display: none; 
+            }
             @include max-tablet{
-                display: none;
+                display: block;
+                height: 70px;
+                color: $xc-color-black-1;
+                align-items: center;
+                display: flex;
+                &:hover{
+                    background-color: $xc-color-grey-light-1;
+                    cursor: pointer;
+                  }
+            }
+            span{
+                font-size: 20px;
             }
         }
       
@@ -230,12 +248,18 @@
             filter: brightness(0.95);
             cursor: pointer;
           }
+          @include max-tablet{
+            &:hover{
+                filter: none;
+                cursor: auto;
+              }
+          }
     }
 
     &__has-2{
         display: block;
         max-width: 100%;
-        height: 290.5px;
+       
         width: auto;
         vertical-align: middle;
         align-items: center;
@@ -243,6 +267,7 @@
             filter: brightness(0.95);
             cursor: pointer;
           }
+       
     }
 
     &__table{
@@ -251,3 +276,15 @@
         }
     }
 }
+
+
+/*end 5 caruasel */
+
+
+
+
+
+
+
+
+
