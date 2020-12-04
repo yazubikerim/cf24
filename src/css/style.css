@@ -7489,6 +7489,44 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .accordion-footer-nav1:hover {
     text-decoration: underline; }
 
+.black-text {
+  font-weight: 700;
+  color: #000; }
+
+.footer-mobil-icon {
+  margin-top: 20px;
+  font-size: 0.9rem; }
+  .footer-mobil-icon .m-icon {
+    width: 30px;
+    margin-right: 10px; }
+
+.mobil-payment {
+  margin-top: 10px; }
+  .mobil-payment__icon {
+    width: 59px;
+    margin-right: 20%; }
+
+.mobil-versand {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.mobil-ssl-trusted {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.mobil-footer-text {
+  margin-left: 1%; }
+
+.copyright-content a {
+  color: white !important; }
+
+@media (max-width: 768px) {
+  .copyright-content .right-footer {
+    justify-content: none !important;
+    justify-content: center !important; }
+  .copyright-content .copyright {
+    text-align: center !important; } }
+
 /* 4 Casual Image & Text */
 .container .image-carousel .row {
   margin-left: 0;
@@ -8176,9 +8214,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     width: 170px !important;
     height: 19px !important; }
   .nav-container {
-    min-width: 96% !important;
     padding-left: 1.6% !important;
-    padding: 6px 0 !important; }
+    padding: 6px 12px !important; }
   .nav-container-2 {
     min-width: 96% !important;
     padding-left: 1.6% !important;
@@ -8298,8 +8335,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
     top: 45%; }
   .arrowDivPrev {
     top: 46%; }
-  .container {
-    max-width: 100%; }
   .slide3 {
     margin-left: 30px; } }
 

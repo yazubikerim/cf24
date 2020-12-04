@@ -6,7 +6,7 @@
     color: $xc-color-black-1;
     font-weight: 600;
     
-};
+}
 .home-banner-text-ext{
     margin: 10px 30px;
     color: $xc-color-black-1;
@@ -19,5 +19,24 @@
     cursor: pointer;
     &:hover {
         filter: brightness(0.95);
+    }
+}
+
+%carousel-image {
+    display: block;
+        max-width: 100%;
+        width: auto;
+        vertical-align: middle;
+        align-items: center;
+        &:hover{
+            filter: brightness(0.95);
+            cursor: pointer;
+          }
+ 
+
+    &__table{
+        @include max-tablet{
+            display: none;
+        }
     }
 }
