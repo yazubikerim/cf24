@@ -40,6 +40,12 @@ $desktop-width: 1200px;
   }
 }
 
+@mixin min-laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
 @mixin laptop {
   @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;

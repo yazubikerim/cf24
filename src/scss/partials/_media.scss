@@ -16,19 +16,13 @@
         width: 170px !important;
         height: 19px !important;
     }
-    .nav-container{
-     
-        padding-left: 1.6%!important;
-        padding: 6px 12px !important;
-    }
+    
     .nav-container-2{
         min-width: 96% !important;
         padding-left: 1.6%!important;
         padding: 6px 0 !important;
     }
-    .nav-icon{
-        width: 17px !important;
-    }
+   
     .nav-search-mobile{
         display: block !important;
     }
@@ -37,19 +31,18 @@
     }
     .nav-login{
         position: absolute !important;
-        right: 16% !important;
+        right: 18% !important;
         z-index:1 !important;
         margin-top: -40px !important;
     }
     .nav-favorite{
         position: absolute !important;
-        right: 10% !important;
+        right: 9% !important;
         z-index:1 !important;
         margin-top: -40px !important;
     }
     .nav-shopping{
-        position: absolute !important;
-        right: 4% !important;
+        margin-right: 9px;
         z-index:1 !important;
         margin-top: -40px !important;
     }
@@ -71,10 +64,7 @@
 } 
 
 @media only screen and(max-width: 768px){
-    .nav-container{
-        min-width: 95%;
-        padding-left: 10px!important;
-    }
+   
     .nav-container-2{
         min-width: 95%;
         padding-left: 10px!important;
@@ -94,28 +84,24 @@
     }
     .nav-login{
         position: absolute !important;
-        right: 25% !important;
+        right: 21% !important;
         z-index:1 !important;
         margin-top: -40px !important;
     }
     .nav-favorite{
         position: absolute !important;
-        right: 13% !important;
+        right: 10% !important;
         z-index:1 !important;
         margin-top: -40px !important;
     }
     .nav-shopping{
-        position: absolute !important;
-        right: 4% !important;
+        margin-right: 8px;
         z-index:1 !important;
         margin-top: -40px !important;
     }
 }
 @media only screen and(max-width: 576px){
-    .nav-container{
-        max-width: 94% !important;
-        padding-left: 3%!important;
-    }
+   
     .nav-container-2{
         max-width: 94% !important;
         padding-left: 3%!important;
