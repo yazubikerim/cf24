@@ -1,26 +1,29 @@
 .footer-Area {
     background-color: $xc-color-grey-light-2;
     height: 65px;
+    cursor: pointer;
 
     .nav-icon {
-        max-width: 15px;
+        max-width: 11px;
         margin-left: 50%;
         padding-top: 17px;
     }
 
     .area-text {
-        font-size: $small-font;
+        font-size: 0.7rem;
         font-weight: 400;
+        margin-top: 0.4%;
+        text-transform: uppercase;
     }
 }
 
 .footer-content {
     background-color: $xc-color-grey-light-1;
-    height: 547px;
+    height: 546px;
     width: 100%;
 
     &__is-nav {
-        padding: 2.3% 0%;
+        padding-top: 50px;
 
         &--has-1 {
             font-size: $medium-font;
@@ -39,7 +42,7 @@
             }
 
             .footer-icon {
-                width: 24px;
+                width: 26px;
                 float: left;
                 margin-right: 10px;
             }
@@ -47,7 +50,7 @@
 
         &--has-2 {
             font-size: $medium-font;
-            line-height: 1.1;
+            line-height: 1.8;
         }
 
         &--has-3 {
@@ -57,19 +60,23 @@
         }
 
         &--has-4 {
-            font-size: $default-font;
-            line-height: 1.5;
+            font-size: $medium-font;
+            line-height: 1.8;
             width: 270px;
-
+            padding-top: 2px;
         }
 
         &--has-5 {
             font-size: $medium-font;
             line-height: 1.5;
-            width: 325px;
+            width: 264px;
+            margin-top: 15px;
+            img{
+                margin-right: 10px;
+            }
 
             .ssl {
-                margin-left: 10px;
+              
             }
         }
     }

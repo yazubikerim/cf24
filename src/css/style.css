@@ -6916,8 +6916,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .home-top-banner .home-banner-area .banner-text-3 {
       font-size: 1.3rem;
       padding-top: 0.4em; }
-      .home-top-banner .home-banner-area .banner-text-3 span {
-        border-bottom: #1a1a1a 2px solid; }
   @media (max-width: 768px) {
     .home-top-banner .banner-text-3 a {
       text-decoration: none;
@@ -7412,21 +7410,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
 /* Global-Footer */
 .footer-Area {
   background-color: #f6f6f6;
-  height: 65px; }
+  height: 65px;
+  cursor: pointer; }
   .footer-Area .nav-icon {
-    max-width: 15px;
+    max-width: 11px;
     margin-left: 50%;
     padding-top: 17px; }
   .footer-Area .area-text {
-    font-size: 0.8rem;
-    font-weight: 400; }
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 0.4%;
+    text-transform: uppercase; }
 
 .footer-content {
   background-color: #e1e1e1;
-  height: 547px;
+  height: 546px;
   width: 100%; }
   .footer-content__is-nav {
-    padding: 2.3% 0%; }
+    padding-top: 50px; }
     .footer-content__is-nav--has-1 {
       font-size: 0.9rem;
       line-height: 3;
@@ -7439,26 +7440,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-weight: 700;
         color: #000; }
       .footer-content__is-nav .border-footer .footer-icon {
-        width: 24px;
+        width: 26px;
         float: left;
         margin-right: 10px; }
     .footer-content__is-nav--has-2 {
       font-size: 0.9rem;
-      line-height: 1.1; }
+      line-height: 1.8; }
     .footer-content__is-nav--has-3 {
       padding-top: 67px;
       font-size: 0.9rem;
       line-height: 1; }
     .footer-content__is-nav--has-4 {
-      font-size: 1rem;
-      line-height: 1.5;
-      width: 270px; }
+      font-size: 0.9rem;
+      line-height: 1.8;
+      width: 270px;
+      padding-top: 2px; }
     .footer-content__is-nav--has-5 {
       font-size: 0.9rem;
       line-height: 1.5;
-      width: 325px; }
-      .footer-content__is-nav--has-5 .ssl {
-        margin-left: 10px; }
+      width: 264px;
+      margin-top: 15px; }
+      .footer-content__is-nav--has-5 img {
+        margin-right: 10px; }
   .footer-content__payment-methods {
     margin-right: 3%; }
 
