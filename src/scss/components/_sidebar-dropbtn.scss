@@ -2,6 +2,9 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  @include laptop{
+      margin-right: 0;
+  }
 
   .dropbtn {
     color: $xc-color-black-1;
@@ -41,7 +44,7 @@
 
 .show {
   display: block;
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 .damen {

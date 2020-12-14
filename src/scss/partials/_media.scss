@@ -76,10 +76,10 @@
         margin-left: 1% !important;
     }
     .search-input{
-        width: 73% !important;
+        width: 82% !important;
     }
     .nav-search-mobile{
-        margin-left: 12% !important;
+        margin-left: 2% !important;
         width: 7% !important;
     }
     .nav-login{
@@ -110,7 +110,7 @@
        margin-left:0.5% !important;
     }
     .search-input{
-        width: 71% !important;
+        width: 81% !important;
     }   
     .nav-search-mobile{
         left: 18% !important;
@@ -129,68 +129,6 @@
 }
 
 
-
-@media only screen and (max-width:1200px){
-    .slider-img{
-        min-width: 24.8%;
-        margin-right: 1%;      
-    }
-    .arrowDivNext{
-        top:160px;
-        left: 94%;
-    }
-    .arrowDivPrev{
-        top:160px;
-    }
-}
-@media only screen and (max-width:992px){
-    .slider-img{
-        min-width: 24.77%;
-        margin-right: 1%;    
-    }
-    .arrowDivNext{
-        left: 93%;
-        top:43%;
-    }
-    .arrowDivPrev{
-        top:43%;
-    }
-   
-    .slide5{
-        margin-left: 30px;
-    }
-}
-@media only screen and (max-width:768px){
-    .slider-img{
-        min-width: 50.50%;      
-    }
-    .arrowDivNext{    
-        left: 89%;
-        top:45%;
-    }
-    .arrowDivPrev{
-        top:46%;
-    }
-    .container{
-        
-    }
-    .slide3{
-        margin-left: 30px;
-    }
-}    
-@media only screen and (max-width:576px){
-    .slider-img{
-        min-width:50.5%;    
-    }
-    .arrowDivNext{
-        top:45%;
-        left: 89%;
-    }
-    .arrowDivPrev{
-        top:43%;
-    }
-   
-}
 
 @media only screen and(max-width: 768px){
 
@@ -356,35 +294,8 @@
         }
         }
  
-        @media only screen and(min-width: 768px) and (max-width: 979px){
-            
-            .item-product{
-            
-           
-            &__is-image{
-                height: 228px;
-                width: auto;
-            } }
-
-        }
       
 
-        @media only screen and(max-width: 768px){
-            .item-product{
-                height: auto;
-                     width: 100%;
-                   
-                    &__is-image{
-                    height: auto;
-                    width: 100%;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    }
-                     }
-                   
-
-            }
             @media only screen and(max-width: 979px){
                 .cat-button{
                     display: none;
@@ -415,13 +326,6 @@
                     margin-left: 4px;
 
                 }
-                .dropdown{
-                    margin-right: 0;
-                }
+                
 
-                .item-product{
-                    &__is-image{
-                        height: 238px;
-                        
-                    }}
             }

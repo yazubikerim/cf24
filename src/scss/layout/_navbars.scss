@@ -30,12 +30,12 @@
         }
 }
 .nav-container .nav-container-2 .row .col-lg-3, .col-lg-6{
-    padding-right: 0px !important;
-    padding-left: 0px  !important;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .header-top .container .row .col-md-4{
-    padding-right: 0px !important;
-    padding-left: 0px  !important;
+    padding-right: 0px;
+    padding-left: 0px ;
 }
 /**particul**/
 .nav-item-menu{
@@ -74,7 +74,7 @@
     color: rgba(0, 0, 0, 0.9);
     transition: 0.2s;
     border: transparent;
-    padding: 0 !important;
+    padding: 0;
 }
 
 .nav-line span:hover {
@@ -86,7 +86,7 @@
     color: #db2b1d;
     transition: 0.2s;
     border: transparent;
-    padding: 0 !important;
+    padding: 0 ;
 }
 
 .nav-line .span-red:hover {
@@ -135,7 +135,7 @@
     margin-left: 3px;
 }
 .right-nav span {
-    padding: 0 !important;
+    padding: 0;
     margin-top: 6px;
     line-height: 14px;
     display: block;
@@ -209,7 +209,7 @@
     cursor: default;
     display: inline-block;
     margin: 16px 10px 5px 8px;
-    padding: 0!important;
+    padding: 0;
 }
 .burger-item a{
     color: black;
@@ -374,7 +374,7 @@
       .mobil-icons {
          
           .container-lg {
-            padding-right: 0px !important;
+            padding-right: 0px;
           }
       }
   }

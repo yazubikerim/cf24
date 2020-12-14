@@ -8,12 +8,33 @@
     border: #e7e7e7 1px solid; 
     height: auto;
     width: auto;
+    @include max-tablet {
+        height: auto;
+        width: 100%;
+      
+        }
     &__is-image{
         height: 338px;
         width: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        @include tablet {
+            height: 228px;
+            width: auto;
+        }
+        @include max-tablet {
+            height: auto;
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include laptop {
+            height: 238px;
+        }
+       
+        }
     }
     &__footer-content{
         height: 65px;
