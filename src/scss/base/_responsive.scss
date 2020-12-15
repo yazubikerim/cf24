@@ -3,9 +3,8 @@ $xc-tablet-width: 768px;
 $xc-laptop-width: 992px;
 $xc-desktop-width: 1200px;
 
-
-@mixin mini-phone {
-  @media (max-width: #{$xc-phone-width}) {
+@mixin min-phone {
+  @media (min-width: #{$xc-phone-width}) {
     @content;
   }
 }
@@ -17,7 +16,7 @@ $xc-desktop-width: 1200px;
 }
 
 @mixin max-phone {
-  @media (min-width: #{$xc-phone-width}) {
+  @media (max-width: #{$xc-phone-width}) {
     @content;
   }
 }

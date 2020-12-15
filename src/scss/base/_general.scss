@@ -35,3 +35,11 @@ a{
         max-width: 1168px
     }
 }}
+
+
+@media only screen and(max-width:992px){
+    body{
+        overflow-x: hidden;
+    }
+    
+} 

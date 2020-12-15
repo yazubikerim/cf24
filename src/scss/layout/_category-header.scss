@@ -7,6 +7,12 @@
 .cat-button {
     margin-top: 1%;
     margin-left: 15px;
+    @include max-laptop {
+    display: none;
+    }
+    @include laptop {
+    margin-left: 4px;
+    }
 }
 
 .dropdown {
@@ -15,7 +21,7 @@
     .btn-default {
         border-radius: 5px;
         background-color: $xc-color-defeult-white;
-        border: solid 1px $xc-color-grey-dark-1 !important;
+        border: solid 1px $xc-color-grey-dark-1;
         width: 150px;
 
         .dropdown-item {
@@ -26,8 +32,8 @@
     }
 
     .dropdown-toggle:focus {
-        border: solid 2px $xc-color-black-1 !important;
-        box-shadow: unset !important;
+        border: solid 2px $xc-color-black-1;
+        box-shadow: unset;
     }
 }
 .show {
@@ -36,6 +42,11 @@
 }
 .line-count {
     margin-top: 20px;
+    @include max-laptop {
+       display: none;
+    }
+    }
+
     .count {
         padding-top: 4px;
         text-align: center;
@@ -44,4 +55,30 @@
     .count-artikel {
         font-size: $medium-font;
     }
-}
+
+    .left-sidebar{
+        @include max-desktop{
+            display: none;
+        }
+    }
+
+    .filter-cat{
+        @include max-laptop {
+            padding-left: 53%;
+        }
+        .filter-img{
+            @include max-laptop {
+                height: 24px;
+                margin-right: 1%;
+            }
+        }
+        @include min-laptop {
+            display: none;
+        }
+    }
+
+    button:focus{
+        @include max-tablet {
+            outline: none;
+        }
+    }   

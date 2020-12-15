@@ -1,6 +1,9 @@
 .header-top {
     background-color:$xc-color-grey-light-2;
     height: 32px;
+    @include max-tablet {
+        display: none;
+    }
         .header-top-left {
             text-align: start;
             padding-top: 2px;
@@ -43,6 +46,10 @@
     }
 .logo {
     width: 220px;
+    @include max-laptop {
+        width: 170px ;
+        height: 19px ;
+    }
 }
 .nav-container {
 
@@ -54,6 +61,19 @@
 }
 .nav-container-2 {
     padding: 25px 0;
+    @include max-laptop{
+        min-width: 96% ;
+        padding-left: 1.6%;
+        padding: 6px 0 ;
+    }
+    @include max-tablet {
+        min-width: 95%;
+        padding-left: 10px;
+    }
+    @include max-phone {
+        max-width: 94% ;
+        padding-left: 3%;
+    }
     &:after{
         content: "";
         position: absolute;
@@ -69,6 +89,9 @@
 .nav-center {
     font-size: 14px;
     margin-top: 4px;
+    @include max-laptop{
+        display: none;
+    }
 }
 .nav-line span {
     color: rgba(0, 0, 0, 0.9);
@@ -129,6 +152,16 @@
     padding-right: 5%;
     height: 31px;
     display: none;
+    @include max-laptop{
+     display: block;
+    }
+    @include max-tablet {
+        margin-left: 2%;
+        width: 7%;
+    }
+    @include max-phone {
+        left: 18%;
+    }
 }
 .img-search-mobil{
     width: 20px;
@@ -145,6 +178,9 @@
     transition: 0.2s;
     border: transparent;
     border-bottom: 2px solid rgba(0,0,0,0.0);
+    @include max-laptop{
+        display: none;
+       }
 }
 
 .right-nav a:hover {
@@ -160,6 +196,15 @@
     cursor: pointer;
     float: left;
     margin-top: 6px;
+    @include max-laptop{
+        display: inline-block;
+    }
+    @include max-tablet {
+        margin-left: 1%;
+    }
+    @include max-phone {
+        margin-left:0.5%;
+    }
 }
 .burger {
     margin-left: auto;
@@ -184,6 +229,15 @@
     display: none;
     float: left;
     border-bottom: 2px solid #191818;
+    @include max-laptop{
+        display: inline-block;
+    }
+    @include max-tablet {
+        width: 82%;
+    }
+    @include max-phone {
+        width: 81%;
+    }
 }
 .search-input:focus{
     outline: 0;
@@ -197,6 +251,9 @@
     transition: transform 0.3s;
     z-index: 2;
     display: none;
+    @include max-laptop {
+        display: block;
+    }
 }
 .mobileMenu-1-active{
     transform: translate(0%);
@@ -297,6 +354,9 @@
     transition: transform 0.3s;
     z-index: 3;
     display: none;
+    @include max-laptop {
+        display: block;
+    }
 }
 .mobileMenu-2-no{
     margin-top: 70px;
@@ -315,16 +375,80 @@
 }
 
 
+.nav-logo{
+    @include max-laptop{
+        margin-left: 2px;
+    }
+    @include max-tablet{
+        margin-left: 1.5%;
+    }
+}
+
+.nav-search{
+    @include max-laptop{
+        display: none;
+    }
+   
+}
+.nav-login{
+    @include max-laptop{
+    position: absolute ;
+    right: 18% ;
+    z-index:1 ;
+    margin-top: -40px;
+    }
+    @include max-tablet{
+        position: absolute;
+        right: 21% ;
+        z-index:1;
+        margin-top: -40px ;
+    }
+}
+.nav-favorite{
+    @include max-laptop{
+        position: absolute;
+        right: 9%;
+        z-index:1;
+        margin-top: -40px;
+        }
+        @include max-tablet{
+            position: absolute;
+            right: 10%;
+            z-index:1;
+            margin-top: -40px;
+        }
+
+}
+.nav-shopping{
+    @include max-laptop{
+        margin-right: 9px;
+        z-index:1;
+        margin-top: -40px;
+    }
+    @include max-tablet{
+        margin-right: 8px;
+        z-index:1;
+        margin-top: -40px ;
+    }
+        }
+  
 
   
 
+
+
+/* HomePage Head Image */
 .home-top-banner{
     position: relative;
     height: 300px;
     display: block;
     width: 100%;
     @include background ("../../images/cf24-homebanner.jpg", right 35% bottom 15%, no-repeat, none);
-  
+    @include max-laptop {
+        height: 150px;
+        background-position: right 30% bottom 40%;
+        background-size: 1800px;
+    }
         .home-banner-area{
         position: absolute;
         margin-top: 2.5%;
@@ -332,26 +456,40 @@
         background: $xc-color-defeult-white;
         border-radius: 4px;
         padding: 15px 0;
+        @include max-laptop {
+            background-color: rgba(255, 0, 0, 0.0);
+        }
       
                 
             .banner-text-1{
             @extend .home-banner-text-ext;
             font-size: $medium-2-font;
             padding-top: $mini-spacing;
+            @include max-laptop {
+                color: white;
+                font-size: 12px;
+            }
             }
             .banner-text-2 {
             @extend .home-banner-text-ext;
             font-size: $exta-big-font;
-        ;
+            @include max-laptop {
+                color: white;
+                font-size: 18px;
+            }
             }
             .banner-text-3 {
             @extend .home-banner-text-ext;
             font-size: $large-font;
             padding-top: $mini-spacing;
-           
-           
+            @include max-laptop {
+                color: white;
+                font-size: 12px;
+            }
             span{
-               
+                @include max-laptop {
+                    border-bottom: white 2px solid;
+                }
             }
             }
         }
@@ -368,6 +506,9 @@
     
     .after-conteiner{
         padding-bottom: 24px;
+        @include max-laptop{
+            padding-bottom: 0;
+        }
     }
 
     @include max-laptop {

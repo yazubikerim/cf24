@@ -15,6 +15,14 @@
         background-color: $xc-color-defeult-white;
         border: 1px solid $xc-color-grey-light-7;
         border-radius: 4px;
+        @include max-tablet {
+            width: 93%;
+            height: auto;
+                 .col-sm-6{
+                 min-height: 35px;
+                 margin-top: 2%;
+            }
+        }
 
         &__content {
             display: block;

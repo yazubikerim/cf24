@@ -35,7 +35,7 @@
         }
        
         }
-    }
+  
     &__footer-content{
         height: 65px;
         background-color:#f9f9f9;
@@ -66,12 +66,26 @@
             line-height: 1.5;
         }
      }
-    }
-}
+    } } 
+
 .items-content{
     margin-top:75px;
+    @include max-phone {
+        margin-top: 0;
+    
+      }
 }
 .items-content-end{
     margin-top:75px;
     margin-bottom:75px;
+  @include max-phone {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.mobil-spacing{
+    @include max-phone {
+        margin-top: 30px;
+      }
 }

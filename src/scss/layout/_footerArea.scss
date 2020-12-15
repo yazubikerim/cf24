@@ -21,7 +21,9 @@
     background-color: $xc-color-grey-light-1;
     height: 546px;
     width: 100%;
-
+    @include max-laptop {
+        display: none;
+    }
     &__is-nav {
         padding-top: 50px;
 
@@ -200,5 +202,11 @@
         .copyright {
             text-align: center;
         }
+    }
+}
+
+.accordion-footer{
+    @include min-laptop{
+        display: none;
     }
 }
