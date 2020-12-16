@@ -8307,11 +8307,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
       height: 554px; }
       .card .card-header {
         font-size: 0.9rem; } }
-  @media (min-width: 576px) and (max-width: 767px) {
-    .card {
-      height: 554px; }
-      .card .card-header {
-        font-size: 0.9rem; } }
 
 .card-2 {
   position: relative;

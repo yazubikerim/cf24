@@ -1,5 +1,4 @@
 /* 4 Casual Image & Text */
-
 .container-lg {
     .image-carousel {
         .row {
@@ -13,7 +12,6 @@
         }
     }
 }
-
 
 .image-carousel {
     margin-top: 6%;
@@ -53,7 +51,6 @@
             @include tablet {
                 font-size: 1rem;
             }
-
         }
 
         &--has-2 {
@@ -86,7 +83,6 @@
             }
         }
 
-
         &--has-1 {
             display: block;
             max-width: 100%;
@@ -110,7 +106,6 @@
                 &:hover {
                     filter: none;
                     cursor: auto;
-
                 }
             }
 
@@ -119,7 +114,6 @@
             }
         }
     }
-
 
     &__is-border-8 {
         display: block;
@@ -145,10 +139,8 @@
             @include tablet {
                 height: 196px;
             }
-
         }
     }
-
 
     /* 5 Casual Image*/
     &__is-top-text {
@@ -270,7 +262,6 @@
                 cursor: pointer;
             }
         }
-
     }
 
     &__is-border-5 {
