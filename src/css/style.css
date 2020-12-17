@@ -6653,20 +6653,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
     padding-bottom: 18px; } }
 
 .nav-container-2 {
-  padding: 25px 0; }
+  padding-top: 25px;
+  padding-bottom: 25px; }
   @media (max-width: 992px) {
     .nav-container-2 {
       min-width: 96%;
-      padding-left: 1.6%;
-      padding: 6px 0; } }
+      padding-bottom: 0;
+      padding-top: 0; } }
   @media (max-width: 768px) {
     .nav-container-2 {
-      min-width: 95%;
-      padding-left: 10px; } }
+      min-width: 100%; } }
   @media (max-width: 576px) {
     .nav-container-2 {
-      max-width: 94%;
-      padding-left: 3%; } }
+      max-width: 100%; } }
   .nav-container-2:after {
     content: "";
     position: absolute;
@@ -7055,7 +7054,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       color: white; } }
 
 .after-conteiner {
-  padding-bottom: 24px; }
+  padding-bottom: 10px; }
   @media (max-width: 992px) {
     .after-conteiner {
       padding-bottom: 0; } }
@@ -7641,7 +7640,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   -ms-user-select: none;
   user-select: none; }
 
-/* Footer */
+/* Footer-Newslatter */
 /* Footer Image & Email Content */
 .footer-image-contact {
   position: relative;
@@ -8214,12 +8213,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
       margin-right: 1em;
       margin-left: 1em; }
     .search__is-content--search {
-      width: 1050px;
+      width: auto;
       height: 63px; }
 
 .faqs-head-text {
   font-size: 1.7rem;
   margin-top: 30px; }
+  @media (max-width: 768px) {
+    .faqs-head-text {
+      display: none; } }
 
 .card-body {
   padding: 1rem; }
@@ -8297,6 +8299,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .card {
   height: 449px; }
+  @media (max-width: 768px) {
+    .card {
+      display: none; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .card {
       height: 494px; }
@@ -8317,6 +8322,57 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
+  @media (max-width: 768px) {
+    .card-2 {
+      display: none; } }
+
+/* Mobil Card */
+@media (min-width: 768px) {
+  .mobil-faq {
+    display: none; } }
+
+.mobil-faq__head-text {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 5%; }
+
+.mobil-faq__row:hover {
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none; }
+
+.mobil-faq__row--arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%) scale(-1, -1);
+  right: 19px;
+  top: 75%; }
+  .mobil-faq__row--arrow span {
+    position: absolute;
+    background-color: #1a1a1a;
+    height: 2px;
+    width: 12px;
+    left: 0;
+    top: 50%;
+    transform-origin: 0 50%; }
+  .mobil-faq__row--arrow span:first-child {
+    transform: translateY(-50%) rotate(-45deg); }
+  .mobil-faq__row--arrow span:last-child {
+    transform: translateY(calc(-50% - 1px)) rotate(45deg); }
+
+.mobil-faq__row--icon {
+  margin-right: 3%;
+  width: 30px; }
+
+.mobil-faq__row--text {
+  font-size: 14px; }
+  .mobil-faq__row--text:hover {
+    text-decoration: none; }
+
+@media (max-width: 768px) {
+  .desktop-display {
+    display: none; } }
 
 .breadcrumb {
   background-color: white;

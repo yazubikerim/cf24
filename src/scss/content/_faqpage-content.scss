@@ -22,7 +22,7 @@
         }
 
         &--search {
-            width: 1050px;
+            width: auto;
             height: 63px;
         }
     }
@@ -31,6 +31,9 @@
 .faqs-head-text {
     font-size: $exta-big-font;
     margin-top: 30px;
+    @include max-tablet {
+        display: none;
+    }
 }
 
 .card-body {
@@ -141,6 +144,9 @@
 }
 
 .card {
+    @include max-tablet {
+        display: none;
+    }
     height: 449px;
 
     @include laptop {
@@ -170,4 +176,68 @@
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+    @include max-tablet {
+        display: none;
+    }
+}
+
+/* Mobil Card */
+.mobil-faq {
+    @include min-tablet{
+        display: none;
+    }
+    &__head-text{
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 5%;
+    }
+    &__row {
+        &:hover{
+            cursor: pointer;
+            font-weight: 700;
+           
+            text-decoration: none;
+        }
+     
+        &--arrow {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            transform: translateY(-50%) scale(-1, -1);
+            right: 19px;
+            top: 75%;
+            span {
+                position: absolute;
+                background-color: #1a1a1a;
+                height: 2px;
+                width: 12px;
+                left: 0;
+                top: 50%;
+                transform-origin: 0 50%;
+            }
+            span:first-child {
+                transform: translateY(-50%) rotate(-45deg);
+            }
+            span:last-child {
+                transform: translateY(calc(-50% - 1px)) rotate(45deg);
+            }
+        }
+        &--icon{
+            margin-right: 3%;
+            width: 30px;
+           
+        }
+        &--text{
+            font-size: 14px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.desktop-display{
+ @include max-tablet{
+     display: none;
+ }
 }

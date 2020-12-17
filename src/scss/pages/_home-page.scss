@@ -1,0 +1,19 @@
+/* Boostrap-Vendor */
+@import "../vendor/index";
+/* base-veriable */
+@import "../base/index";
+/* abstracts */
+@import "../abstracts/index";
+/* Global-header */
+@import "../layout/Global-navbar-menu";
+@import "../components/Navbar-popup-modal";
+/* content */
+@import "../components/Image-gallery-Caruasel";
+@import "../components/Product-slider";
+/* Footer-Newslatter */
+@import "../layout/Homepage-newslatter";
+/* Global-Footer */
+@import "../layout/Global-footer-area";
+/* Mobil-Section */
+@import "../partials/mobil/index";
+
