@@ -8198,23 +8198,32 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .search {
   margin-top: 0.8em; }
+  @media (max-width: 768px) {
+    .search {
+      margin-top: 1.8rem; } }
   .search__is-title {
     font-size: 1.7rem;
     font-weight: 700;
     padding-right: 0;
     padding-left: 0; }
   .search__is-content {
-    border: #ccc solid 1.5px;
-    border-radius: 5px;
-    width: 100%;
-    height: 65px;
-    margin-top: 0.8em; }
-    .search__is-content--icon {
-      margin-right: 1em;
-      margin-left: 1em; }
-    .search__is-content--search {
-      width: auto;
-      height: 63px; }
+    margin-top: 0.8em;
+    display: inline-block;
+    position: relative;
+    width: 100%; }
+    .search__is-content--search-icon {
+      position: absolute;
+      margin-top: 22px;
+      margin-left: 10px; }
+    .search__is-content--input {
+      width: 100%;
+      height: 65px;
+      padding-left: 45px;
+      border: #ccc solid 1.5px;
+      border-radius: 5px; }
+      .search__is-content--input:focus {
+        outline: none;
+        border: solid 3px black; }
 
 .faqs-head-text {
   font-size: 1.7rem;
@@ -8267,6 +8276,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .hr-spacing {
   margin-top: 6%;
   margin-bottom: 6%; }
+  @media (max-width: 768px) {
+    .hr-spacing {
+      margin-top: 14%;
+      margin-bottom: 5%; } }
 
 .footer-contact {
   margin-bottom: 3%; }
@@ -8336,10 +8349,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: center;
   margin-top: 5%; }
 
-.mobil-faq__row:hover {
+.mobil-faq__row a:hover {
   cursor: pointer;
   font-weight: 700;
   text-decoration: none; }
+
+.mobil-faq__row--hr {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.mobil-faq__row--div {
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
 
 .mobil-faq__row--arrow {
   position: absolute;
@@ -8347,7 +8368,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: 20px;
   transform: translateY(-50%) scale(-1, -1);
   right: 19px;
-  top: 75%; }
+  top: 50%; }
   .mobil-faq__row--arrow span {
     position: absolute;
     background-color: #1a1a1a;
@@ -8377,11 +8398,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .breadcrumb {
   background-color: white;
   padding-left: 0px; }
+  @media (max-width: 768px) {
+    .breadcrumb {
+      display: none; } }
   .breadcrumb .breadcrumb-item {
     color: #1a1a1a; }
     .breadcrumb .breadcrumb-item a {
       color: #858484;
       font-size: 14px; }
+
+.back-prev {
+  margin-top: 5%;
+  margin-bottom: 3%; }
+  .back-prev:hover {
+    cursor: pointer; }
+  @media (min-width: 768px) {
+    .back-prev {
+      display: none; } }
+  .back-prev a:hover {
+    text-decoration: none; }
+  .back-prev img {
+    margin-bottom: 3px; }
+  .back-prev span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px; }
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; } }
 
 .nav__li {
   padding: 10px 0;
@@ -8406,6 +8451,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px; }
+  @media (max-width: 768px) {
+    .help-page-content__is-head-title {
+      font-size: 24px; } }
 
 .help-page-content__is-title {
   font-size: 16px;
