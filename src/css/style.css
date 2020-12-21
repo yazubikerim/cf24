@@ -6508,7 +6508,7 @@ template {
     color: #6c757d; }
 
 /* base-veriable */
-.heading-1, .heading-2, .heading-3, .heading-4 {
+.heading-1, .heading-2, .heading-3, .heading-4, .heading-5 {
   font-family: sans-serif;
   font-weight: 400; }
 
@@ -6521,24 +6521,29 @@ template {
   line-height: 1.125; }
 
 .heading-2 {
+  font-size: 22px;
+  letter-spacing: -.8px;
+  line-height: 1.125; }
+
+.heading-3 {
   font-size: 4rem;
   font-style: italic;
   line-height: 1; }
-  .heading-2--light {
+  .heading-3--light {
     color: #e1e1e1; }
-  .heading-2--dark {
+  .heading-3--dark {
     color: #444; }
 
-.heading-3 {
+.heading-4 {
   font-size: 1.6rem;
   color: #1a1a1a;
   text-transform: uppercase; }
 
-.heading-4 {
+.heading-5 {
   font-size: 1.9rem; }
-  .heading-4--light {
+  .heading-5--light {
     color: #e1e1e1; }
-  .heading-4--dark {
+  .heading-5--dark {
     color: #444; }
 
 * {
@@ -8290,6 +8295,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .footer-contact__is-tel:hover {
       background-color: #3e3e3e;
       color: white; }
+      .footer-contact__is-tel:hover img {
+        filter: invert(199%) sepia(107%) saturate(817%) hue-rotate(239deg) brightness(104%) contrast(124%); }
   .footer-contact__is-info {
     margin-top: 3%;
     line-height: 1.5;
@@ -8304,8 +8311,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-bottom: 3%; }
 
 .card-button {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
   height: 66px; }
   .card-button--text {
     width: 100%; }

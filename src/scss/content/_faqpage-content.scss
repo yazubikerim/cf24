@@ -125,9 +125,13 @@
 
         &:hover {
             background-color: #3e3e3e;
-            color: white;
+            color: white;   
+            img{
+                filter: invert(199%) sepia(107%) saturate(817%) hue-rotate(239deg) brightness(104%) contrast(124%);
+            }
         }
-    }
+        }
+  
 
     &__is-info {
         margin-top: 3%;
@@ -146,8 +150,8 @@
 }
 
 .card-button {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
     height: 66px;
 
     &--text {

@@ -42,8 +42,14 @@ $exta-blok-spacing:5em;//defealt em=80px
     letter-spacing: -.8px;
     line-height: 1.125;
 }
-
 .heading-2 {
+    @extend %heading;
+    font-size: 22px;
+    letter-spacing: -.8px;
+    line-height: 1.125;
+}
+
+.heading-3 {
     @extend %heading;
     font-size: 4rem;
     font-style: italic;
@@ -53,14 +59,14 @@ $exta-blok-spacing:5em;//defealt em=80px
     &--dark { color: $xc-color-grey-dark-1; }
 }
 
-.heading-3 {
+.heading-4 {
     @extend %heading;
     font-size: 1.6rem;
     color: $xc-color-black-1;
     text-transform: uppercase;
 }
 
-.heading-4 {
+.heading-5 {
     @extend %heading;
     font-size: 1.9rem;
 
