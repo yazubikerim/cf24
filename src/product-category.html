@@ -239,38 +239,58 @@
 <!--CONTENT-->
 
  <!-- Left Sidebar Dropbtn -->
-  <div class="container">
+  <div class="container-lg">
     <div class="row">
-      <div class="col-lg-2 col-sm-0 left-sidebar">
-        <div class="damen">Damen</div>
-        <div class="dropdown">
-          <div onclick="myFunction()" class="dropbtn damen">Herren</div>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#home" class="cat-btn-text"><span>Accessoires</span></a>
-            <a href="#about" class="cat-btn-text"><span>Anzüge</span></a>
-            <a href="#contact" class="cat-btn-text"><span>Bademode</span></a>
-            <a href="#home" class="cat-btn-text"><span>Hemden</span></a>
-            <a href="#about" class="cat-btn-text"><span>Hosen & Chinos</span></a>
-            <a href="#contact" class="cat-btn-text"><span>Jacken</span></a>
-            <a href="#home" class="cat-btn-text"><span>Jeans</span></a>
-            <a href="#about" class="cat-btn-text"><span>Jogginghosen aus Jeans</span></a>
-            <a href="#contact" class="cat-btn-text"><span>Mäntel</span></a>
-            <a href="#home" class="cat-btn-text"><span>Pullover & Strickjacken</span></a>
-            <a href="#about" class="cat-btn-text"><span>Sportbekleidung</span></a>
-            <a href="#contact" class="cat-btn-text"><span>Sweatshirts & -jacken</span></a>
-            <a href="#home" class="cat-btn-text"><span>T-Shirts & Polos</span></a>
-            <a href="#about" class="cat-btn-text"><span>Westen</span></a>
-            <a href="#contact" class="cat-btn-text"><span>Wäsche</span></a>
+      <div class="col-xl-2 col-sm-0 left-sidebar">
+        <div class="left-sidebar__cat">Damen</div>
+        <div class="left-sidebar__dropdown">
+          <div onclick="myFunction()" class="left-sidebar__cat">Herren</div>
+          <div id="myDropdown" class="left-sidebar__dropdown-content">
+            <a href="#home" class="left-sidebar__dropdown-content--text"><span>Accessoires</span></a>
+            <a href="#about" class="left-sidebar__dropdown-content--text"><span>Anzüge</span></a>
+            <a href="#contact" class="left-sidebar__dropdown-content--text"><span>Bademode</span></a>
+            <a href="#home" class="left-sidebar__dropdown-content--text"><span>Hemden</span></a>
+            <a href="#about" class="left-sidebar__dropdown-content--text"><span>Hosen & Chinos</span></a>
+            <a href="#contact" class="left-sidebar__dropdown-content--text"><span>Jacken</span></a>
+            <a href="#home" class="left-sidebar__dropdown-content--text"><span>Jeans</span></a>
+            <a href="#about" class="left-sidebar__dropdown-content--text"><span>Jogginghosen aus Jeans</span></a>
+            <a href="#contact" class="left-sidebar__dropdown-content--text"><span>Mäntel</span></a>
+            <a href="#home" class="left-sidebar__dropdown-content--text"><span>Pullover & Strickjacken</span></a>
+            <a href="#about" class="left-sidebar__dropdown-content--text"><span>Sportbekleidung</span></a>
+            <a href="#contact" class="left-sidebar__dropdown-content--text"><span>Sweatshirts & -jacken</span></a>
+            <a href="#home" class="left-sidebar__dropdown-content--text"><span>T-Shirts & Polos</span></a>
+            <a href="#about" class="left-sidebar__dropdown-content--text"><span>Westen</span></a>
+            <a href="#contact" class="left-sidebar__dropdown-content--text"><span>Wäsche</span></a>
           </div>
         </div>
       </div>
 
-
+  
        <!-- Category Button & Head Title -->
-      <div class="col-lg-10 col-sm-12 content-edit">
-        <span class="cat-title">Herren</span>
-        <span class="filter-cat"><img src="images/icon/filter.svg" alt="" class="filter-img"> Filter</span>
-        <div class="row">
+      <div class="col-xl-10 col-lg-12 col-sm-12">
+        <div class="col-sm-12 filter d-flex justify-content-between align-items-center"><span class="filter__title"><a href=""><img src="/images/icon/left-arrow1.svg" alt="" width="17"></a>Herren</span> 
+        <div class="filter__button"><img src="images/icon/filter.svg" alt="" class="filter__button__img"> Filter</div></div>
+    <article class="product-category-button">
+    <div class="product-category-button__has-1">
+      Bootcut Jeans
+    </div>
+    <div class="product-category-button__has-1">
+      Loose fit Jeans
+    </div>
+    <div class="product-category-button__has-1">
+      Short Jeans
+    </div>
+    <div class="product-category-button__has-1">
+      Straight Jeans
+    </div>
+    <div class="product-category-button__has-1">
+      Straight Jeans
+    </div>
+    <div class="product-category-button__has-1">
+      Straight Jeans
+    </div>
+    </article>
+        <div class="row justify-content-center">
           <div class="dropdown cat-button">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -347,8 +367,8 @@
 
 
          <!-- Item Product Content -->
-        <div class="row items col-md-12 col-12 col-sm-12">
-          <!-- <div class="row "></div> -->
+        <!-- <div class="row items col-md-12 col-12 col-sm-12">-->
+          <!-- <div class="row "></div> --><!--
           <div class="col-md-4 col-6 col-sm-4 mobil-spacing">
             <div class="item-product"><img src="images/alistar.jpg" alt="" class="item-product__is-image">
               <div class="item-product__footer-content">
@@ -544,6 +564,132 @@
                 </div>
               </div>         
           </div>
+        -->
+<!--test-->
+<article>
+<div class="product-item">
+  <div class="col-md-4 sm-6 col-6">
+    <div class="product-item__content">
+      <div class=""><img src="/images/valir.jpg" alt="" style="width: 100%;"></div>
+      <div class="product-item__content__footer">
+        <div class="product-item__content__footer--section">
+          <div class="row">
+            <div class="product-item__content__footer--section__is-brand">Yazubi</div>
+        <div class="product-item__content__footer--section__is-brand ml-auto">
+          34,95€</div>
+      </div>
+      <div class="product-item__content__footer--section__is-title">Yazubi - Dustin Chino Pants - black
+        (4R194008)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 sm-6 col-6">
+    <div class="product-item__content">
+      <div class=""><img src="/images/valir.jpg" alt="" style="width: 100%;"></div>
+      <div class="product-item__content__footer">
+        <div class="product-item__content__footer--section">
+          <div class="row">
+            <div class="product-item__content__footer--section__is-brand">Yazubi</div>
+        <div class="product-item__content__footer--section__is-brand ml-auto">
+          34,95€</div>
+      </div>
+      <div class="product-item__content__footer--section__is-title">Yazubi - Dustin Chino Pants - black
+        (4R194008)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 sm-6 col-6">
+    <div class="product-item__content">
+      <div class=""><img src="/images/valir.jpg" alt="" style="width: 100%;"></div>
+      <div class="product-item__content__footer">
+        <div class="product-item__content__footer--section">
+          <div class="row">
+            <div class="product-item__content__footer--section__is-brand">Yazubi</div>
+        <div class="product-item__content__footer--section__is-brand ml-auto">
+          34,95€</div>
+      </div>
+      <div class="product-item__content__footer--section__is-title">Yazubi - Dustin Chino Pants - black
+        (4R194008)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 sm-6 col-6">
+    <div class="product-item__content">
+      <div class=""><img src="/images/valir.jpg" alt="" style="width: 100%;"></div>
+      <div class="product-item__content__footer">
+        <div class="product-item__content__footer--section">
+          <div class="row">
+            <div class="product-item__content__footer--section__is-brand">Yazubi</div>
+        <div class="product-item__content__footer--section__is-brand ml-auto">
+          34,95€</div>
+      </div>
+      <div class="product-item__content__footer--section__is-title">Yazubi - Dustin Chino Pants - black
+        (4R194008)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 sm-6 col-6">
+    <div class="product-item__content">
+      <div class=""><img src="/images/valir.jpg" alt="" style="width: 100%;"></div>
+      <div class="product-item__content__footer">
+        <div class="product-item__content__footer--section">
+          <div class="row">
+            <div class="product-item__content__footer--section__is-brand">Yazubi</div>
+        <div class="product-item__content__footer--section__is-brand ml-auto">
+          34,95€</div>
+      </div>
+      <div class="product-item__content__footer--section__is-title">Yazubi - Dustin Chino Pants - black
+        (4R194008)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 sm-6 col-6">
+    <div class="product-item__content">
+      <div class=""><img src="/images/valir.jpg" alt="" style="width: 100%;"></div>
+      <div class="product-item__content__footer">
+        <div class="product-item__content__footer--section">
+          <div class="row">
+            <div class="product-item__content__footer--section__is-brand">Yazubi</div>
+        <div class="product-item__content__footer--section__is-brand ml-auto">
+          34,95€</div>
+      </div>
+      <div class="product-item__content__footer--section__is-title">Yazubi - Dustin Chino Pants - black
+        (4R194008)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 sm-6 col-6">
+    <div class="product-item__content">
+      <div class=""><img src="/images/valir.jpg" alt="" style="width: 100%;"></div>
+      <div class="product-item__content__footer">
+        <div class="product-item__content__footer--section">
+          <div class="row">
+            <div class="product-item__content__footer--section__is-brand">Yazubi</div>
+        <div class="product-item__content__footer--section__is-brand ml-auto">
+          34,95€</div>
+      </div>
+      <div class="product-item__content__footer--section__is-title">Yazubi - Dustin Chino Pants - black
+        (4R194008)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</article>
+<!--test-->
+
         </div>
       </div>
     </div>

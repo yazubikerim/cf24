@@ -12,6 +12,11 @@
                 text-align: start;
                 padding-bottom: 3px;
                 border-bottom: $xc-color-black-1 1px solid;
+                a{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
             }
         }
         .header-top-center {

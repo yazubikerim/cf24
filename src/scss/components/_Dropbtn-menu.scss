@@ -1,53 +1,16 @@
-/* left-sidebar */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  @include laptop{
-      margin-right: 0;
+.left-sidebar{
+  &__cat{
+    ffont-size: $default-font;
+    font-weight: 700;
+    line-height: 1.5;
   }
-
-  .dropbtn {
-    color: $xc-color-black-1;
-    font-size: $medium-2-font;
-    border: none;
-    cursor: pointer; }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      text-decoration: none;
-      min-width: 260px;
-      overflow: auto;
-      z-index: 1;
-
-      a {
-        color: $xc-color-black-1;
-        padding: 5px 0px;
-        display: block;
-        text-decoration: none;
-        border-bottom: 2px solid transparent;
-        line-height: 18px;
-        font-size: $medium-font;
-      }
-
-      .cat-btn-text span {
-        color: $xc-color-black-1;
-        margin-left: 20px;
-        border-bottom: 2px solid transparent;
-
-        &:hover {
-          border-color: $xc-color-black-1;
-        }
-      }
-    } 
-}
-
-.show {
-  display: block;
-  box-shadow: none;
-}
-
-.damen {
-  font-size: $medium-font;
-  font-weight: bold;
+  &__dropdown-content{
+    margin-top: 0.4rem;
+    margin-left: 0.7rem;
+    &--text{
+      font-size: 0.9rem;
+      display: block;
+      line-height: 1.8;
+    }
+  }
 }

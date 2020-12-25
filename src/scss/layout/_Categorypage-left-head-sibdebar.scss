@@ -1,7 +1,43 @@
-.cat-title {
-    font-size: 2.3rem;
-    letter-spacing: 1px;
-    font-weight: 700;
+.filter {
+    @include max-laptop{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    &__title{
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        @include min-laptop{
+            img{
+                display: none;
+            }
+        }
+        @include max-laptop {
+            font-size: 1.5rem;
+            img{
+                padding-bottom: 3.5px;
+                margin-right: 5px;
+            }
+        }
+    }
+    &__button{
+        display: inline;
+        @include max-laptop {
+            padding-left: 53%;
+        }
+        &__img{
+            @include max-laptop {
+                height: 24px;
+                padding-right: 1%;
+                margin-bottom: 3px;
+            }
+        }
+        @include min-laptop {
+            display: none;
+        }
+    }
+    
 }
 
 .cat-button {
@@ -21,8 +57,8 @@
     .btn-default {
         border-radius: 5px;
         background-color: $xc-color-defeult-white;
-        border: solid 1px $xc-color-grey-dark-1;
-        width: 150px;
+        border: 1px solid #dedede;
+        width: 155px;
 
         .dropdown-item {
             letter-spacing: .5px;
@@ -37,9 +73,21 @@
     }
 }
 .show {
-    width: 300px;
+  
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
 }
+.left-sidebar{
+    @include max-desktop{
+        display: none;
+    }
+}
+
+button:focus{
+    @include max-tablet {
+        outline: none;
+    }
+} 
+
 .line-count {
     margin-top: 20px;
     @include max-laptop {
@@ -48,7 +96,8 @@
     }
 
     .count {
-        padding-top: 4px;
+        padding-bottom: 25px;
+        padding-top: 7px;
         text-align: center;
     }
 
@@ -56,29 +105,36 @@
         font-size: $medium-font;
     }
 
-    .left-sidebar{
-        @include max-desktop{
+  
+
+
+    .product-category-button{
+        
+        display: flex;
+        white-space: nowrap;
+        overflow-x: none;
+        -webkit-overflow-scrolling: touch;
+        left: 0;
+        right: 0;
+        padding-left: 16px;
+        margin-bottom: 20px;
+        @include min-laptop{
             display: none;
         }
-    }
-
-    .filter-cat{
-        @include max-laptop {
-            padding-left: 53%;
-        }
-        .filter-img{
-            @include max-laptop {
-                height: 24px;
-                margin-right: 1%;
-            }
-        }
-        @include min-laptop {
-            display: none;
-        }
-    }
-
-    button:focus{
-        @include max-tablet {
+        
+        &__has-1{
+            height: 32px;
+            display: inline-block;
+            padding: 0 12px;
+            line-height: 30px;
+            margin: 0 8px 0 0;
+            color: #1a1a1a;
             outline: none;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color: #fff;
+            border: 1px solid #e7e7e7;
+            border-radius: 4px;
+            transition: border-color .2s ease-out;
         }
-    }   
+    }
