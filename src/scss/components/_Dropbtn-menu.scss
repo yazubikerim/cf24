@@ -1,8 +1,21 @@
 .left-sidebar{
   &__cat{
-    ffont-size: $default-font;
-    font-weight: 700;
-    line-height: 1.5;
+    &:hover{
+      font-size: $default-font;
+      font-weight: 700;
+      line-height: 1.5;
+      cursor: pointer;
+    }
+ 
+  }
+  .active{
+    background-color: white;
+    font-size: $default-font;
+      font-weight: 700;
+      line-height: 1.5;
+      &::after{
+         content: "";
+      }
   }
   &__dropdown-content{
     margin-top: 0.4rem;
@@ -10,7 +23,7 @@
     &--text{
       font-size: 0.9rem;
       display: block;
-      line-height: 1.8;
+      line-height: 2;
     }
   }
 }
