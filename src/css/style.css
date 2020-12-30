@@ -8326,6 +8326,116 @@ ORDER: Base + typography > general layout + grid > page layout > components
     letter-spacing: 2.2px;
     width: 305px; }
 
+/* rating */
+.rating__head {
+  font-size: 1.7rem; }
+
+.rating__count {
+  float: right;
+  margin-top: 15px;
+  font-weight: 600;
+  text-decoration: underline; }
+
+.rating__statistics {
+  margin-top: 45px; }
+  .rating__statistics__point {
+    margin-left: 35px; }
+    .rating__statistics__point--border {
+      background: url("/images/balon.png");
+      height: 300px;
+      background-repeat: no-repeat;
+      background-size: inherit; }
+      .rating__statistics__point--border .note {
+        position: absolute;
+        left: 113px;
+        background-color: white;
+        width: 50px;
+        text-align: center;
+        top: -5px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #919191; }
+      .rating__statistics__point--border__stars {
+        width: 128px;
+        height: 20px;
+        display: inline-block;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 25px;
+        margin-top: 30px; }
+        .rating__statistics__point--border__stars--star {
+          width: 126px;
+          height: 25px;
+          background: url(https://cdn1.clubfashion24.de/wp-content/uploads/2019/12/star-gray-new.png) repeat-x;
+          vertical-align: middle;
+          background-size: contain;
+          margin-top: -4px;
+          float: right; }
+          .rating__statistics__point--border__stars--star span {
+            background: url(/images/star-light_yellow.png) repeat-x;
+            height: 25px;
+            background-size: contain;
+            display: block; }
+      .rating__statistics__point--border__count {
+        margin: -22px 30px;
+        width: 115px;
+        color: #919191;
+        font-size: 84px; }
+  .rating__statistics__options--option {
+    margin-bottom: 9px; }
+    .rating__statistics__options--option__stars {
+      margin-top: 4px;
+      width: 80px;
+      float: left;
+      height: auto;
+      background: url(https://cdn1.clubfashion24.de/wp-content/uploads/2019/12/star-gray-new.png) repeat-x;
+      vertical-align: middle;
+      background-size: contain; }
+      .rating__statistics__options--option__stars__star {
+        background: url(/images/star-light_yellow.png) repeat-x;
+        height: 16px;
+        background-size: contain;
+        display: block;
+        width: 80px; }
+    .rating__statistics__options--option__text {
+      float: left;
+      font-size: 12px;
+      font-weight: 700;
+      padding-left: 10px;
+      margin-top: 4px; }
+    .rating__statistics__options--option__bar {
+      float: left;
+      margin-top: 7px;
+      margin-left: 14px;
+      padding-top: 1px;
+      width: 162px;
+      height: 12px;
+      -webkit-border-radius: 10px;
+      -ms-webkit-radius: 10px;
+      zoom: 1;
+      background-color: #eee; }
+      .rating__statistics__options--option__bar--color {
+        height: 8px;
+        margin-top: 1px;
+        display: block;
+        background-color: #ffbc00;
+        text-indent: -9999px;
+        -webkit-border-radius: 10px;
+        width: 90%; }
+    .rating__statistics__options--option__count {
+      font-size: 12px;
+      border: 1px solid #919191;
+      display: inline-block;
+      margin-left: 10px;
+      padding: 2px; }
+  .rating__statistics__button-1 {
+    margin-top: 35px;
+    width: 200px; }
+  .rating__statistics__button-2 {
+    margin-top: 17px;
+    width: 200px; }
+
 .search {
   margin-top: 0.8em; }
   @media (max-width: 768px) {

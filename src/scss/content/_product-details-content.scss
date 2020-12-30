@@ -298,3 +298,150 @@
     
  }
 }
+
+/* rating */
+.rating {
+
+    &__head{
+        font-size: $exta-big-font;
+    }
+    &__count{
+        float: right;
+        margin-top: 15px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    &__statistics {
+        margin-top: 45px;
+
+        &__point {
+            margin-left: 35px;
+
+            &--border {
+                background: url("/images/balon.png");
+                height: 300px;
+                background-repeat: no-repeat;
+                background-size: inherit;
+
+                .note {
+                    position: absolute;
+                    left: 113px;
+                    background-color: white;
+                    width: 50px;
+                    text-align: center;
+                    top: -5px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #919191;
+                }
+
+                &__stars {
+                    width: 128px;
+                    height: 20px;
+                    display: inline-block;
+                    margin: 0 auto;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-left: 25px;
+                    margin-top: 30px;
+
+                    &--star {
+                        width: 126px;
+                        height: 25px;
+                        background: url(https://cdn1.clubfashion24.de/wp-content/uploads/2019/12/star-gray-new.png) repeat-x;
+                        vertical-align: middle;
+                        background-size: contain;
+                        margin-top: -4px;
+                        float: right;
+
+                        span {
+                            background: url(/images/star-light_yellow.png) repeat-x;
+                            height: 25px;
+                            background-size: contain;
+                            display: block;
+                        }
+                    }
+                }
+                &__count{
+                    margin: -22px 30px;
+                    width: 115px;
+                    color: #919191;
+                    font-size: 84px;
+                }
+
+            }
+        }
+
+        &__options{
+            &--option{
+              margin-bottom: 9px;
+                &__stars{
+                    margin-top: 4px;
+                    width: 80px;
+                    float: left;
+                    height: auto;
+                    background: url(https://cdn1.clubfashion24.de/wp-content/uploads/2019/12/star-gray-new.png) repeat-x;
+                    vertical-align: middle;
+                    background-size: contain;
+                    
+                    &__star{
+                        background: url(/images/star-light_yellow.png) repeat-x;
+                        height: 16px;
+                        background-size: contain;
+                        display: block;
+                        width: 80px;
+                    }
+
+                    }
+                    &__text{
+                        float: left;
+                        font-size: 12px;
+                        font-weight: 700;
+                        padding-left: 10px;
+                        margin-top: 4px;
+                    
+                    }
+                    &__bar{
+                        float: left;
+                        margin-top: 7px;
+                        margin-left: 14px;
+                        padding-top: 1px;
+                        width: 162px;
+                        height: 12px;
+                        -webkit-border-radius: 10px;
+                        -ms-webkit-radius: 10px;
+                        zoom: 1;
+                        background-color: #eee;
+                        &--color{
+                            height: 8px;
+                            margin-top: 1px;
+                            display: block;
+                            background-color: #ffbc00;
+                            text-indent: -9999px;
+                            -webkit-border-radius: 10px;
+                            width: 90%;
+                        }
+                    }
+                    &__count{
+                        font-size: 12px;
+                        border: 1px solid #919191;
+                        display: inline-block;
+                        margin-left: 10px;
+                        padding: 2px;
+                    }
+            }
+        }
+
+        &__button-1{
+            margin-top: 35px;
+            width: 200px;
+        }
+        &__button-2{
+            margin-top: 17px;
+            width: 200px;
+        }
+    }
+}
+
+
+
