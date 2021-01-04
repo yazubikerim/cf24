@@ -28,6 +28,22 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin stars ($star-width,$star-height,$rating-width) {
+    width: $star-width;
+    float: left;
+    height: auto;
+    background: url(https://cdn1.clubfashion24.de/wp-content/uploads/2019/12/star-gray-new.png) repeat-x;
+    vertical-align: middle;
+    background-size: contain;
+
+    &__star{
+        background: url(/images/star-light_yellow.png) repeat-x;
+        height: $star-height;
+        background-size: contain;
+        display: block;
+        width: $rating-width;
+    }
+}
 
 // MEDIA QUERY MANAGER
 /*

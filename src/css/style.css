@@ -8342,7 +8342,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     margin-left: 35px; }
     .rating__statistics__point--border {
       background: url("/images/balon.png");
-      height: 300px;
+      height: 200px;
       background-repeat: no-repeat;
       background-size: inherit; }
       .rating__statistics__point--border .note {
@@ -8435,6 +8435,67 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .rating__statistics__button-2 {
     margin-top: 17px;
     width: 200px; }
+
+.comment__filter {
+  background-color: #f0f0f0;
+  min-height: 50px;
+  margin-bottom: 20px; }
+  .comment__filter__dropdown {
+    padding-top: 10px;
+    float: left;
+    overflow: hidden;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0; }
+    .comment__filter__dropdown:hover .comment__filter__dropdown__content {
+      display: block; }
+    .comment__filter__dropdown--button {
+      font-size: 13px;
+      border: 1px solid #ccc;
+      outline: none;
+      color: black;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 172px;
+      background-color: white;
+      margin: 0; }
+      .comment__filter__dropdown--button img {
+        margin-left: 5px;
+        margin-right: 3px;
+        width: 5px; }
+    .comment__filter__dropdown__content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+      .comment__filter__dropdown__content a {
+        float: none;
+        color: black;
+        padding: 5px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left; }
+        .comment__filter__dropdown__content a:hover {
+          background-color: #ddd; }
+
+.comment__row__stars {
+  width: 107px;
+  float: left;
+  height: auto;
+  background: url(https://cdn1.clubfashion24.de/wp-content/uploads/2019/12/star-gray-new.png) repeat-x;
+  vertical-align: middle;
+  background-size: contain; }
+  .comment__row__stars__star {
+    background: url(/images/star-light_yellow.png) repeat-x;
+    height: 21px;
+    background-size: contain;
+    display: block;
+    width: 105px; }
 
 .search {
   margin-top: 0.8em; }
