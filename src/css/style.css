@@ -8483,19 +8483,103 @@ ORDER: Base + typography > general layout + grid > page layout > components
         .comment__filter__dropdown__content a:hover {
           background-color: #ddd; }
 
+.comment__row__name {
+  font-weight: 700;
+  font-size: 0.9rem; }
+
+.comment__row__flag span {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  color: #999;
+  font-weight: 600; }
+
 .comment__row__stars {
   width: 107px;
   float: left;
   height: auto;
   background: url(https://cdn1.clubfashion24.de/wp-content/uploads/2019/12/star-gray-new.png) repeat-x;
   vertical-align: middle;
-  background-size: contain; }
+  background-size: contain;
+  margin-right: 10px; }
   .comment__row__stars__star {
     background: url(/images/star-light_yellow.png) repeat-x;
     height: 21px;
     background-size: contain;
     display: block;
     width: 105px; }
+
+.comment__row__verified {
+  font-size: 0.7rem;
+  color: #1ca444;
+  font-weight: 600;
+  padding-bottom: 4px;
+  margin-top: 4px; }
+  .comment__row__verified span {
+    padding-left: 3px; }
+  .comment__row__verified img {
+    margin-bottom: 2px; }
+
+.comment__row__date {
+  font-size: 0.8rem;
+  color: #999; }
+
+.comment__row__size {
+  font-size: 0.8rem;
+  color: #999; }
+
+.comment__row__text {
+  margin-top: 25px;
+  font-size: 0.8rem;
+  color: black; }
+
+.comment__row__evaluation {
+  margin-top: 25px;
+  font-size: 0.8rem;
+  color: black; }
+  .comment__row__evaluation--text {
+    font-weight: 600;
+    text-decoration: underline; }
+  .comment__row__evaluation--question {
+    font-size: 0.8rem;
+    color: black;
+    margin-right: 15px; }
+  .comment__row__evaluation--answerd {
+    line-height: 25px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: white;
+    padding: 0 10px;
+    margin-right: 10px; }
+
+.all-button {
+  margin-top: 15px; }
+  .all-button__self {
+    font-size: 0.9rem;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    text-transform: capitalize; }
+
+/*similar products*/
+.similar-products {
+  margin-top: 35px; }
+  .similar-products__content--head-text {
+    font-size: 1.7rem; }
+  .similar-products__content__all-product {
+    display: flex;
+    justify-content: left;
+    overflow-x: visible; }
+    .similar-products__content__all-product--one-product {
+      cursor: pointer;
+      left: 0;
+      margin: 0 10px 0 0;
+      min-width: 180px;
+      height: auto;
+      position: relative;
+      color: #333;
+      filter: brightness(0.95); }
+      .similar-products__content__all-product--one-product img {
+        width: 100%; }
 
 .search {
   margin-top: 0.8em; }
