@@ -8562,7 +8562,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 /*similar products*/
 .similar-products {
-  margin-top: 35px; }
+  margin-top: 35px;
+  margin-bottom: 35px; }
   .similar-products__content--head-text {
     font-size: 1.7rem; }
   .similar-products__content__all-product {
@@ -8578,8 +8579,60 @@ ORDER: Base + typography > general layout + grid > page layout > components
       position: relative;
       color: #333;
       filter: brightness(0.95); }
-      .similar-products__content__all-product--one-product img {
+      @media (max-width: 768px) {
+        .similar-products__content__all-product--one-product {
+          min-width: 24%; } }
+      @media (max-width: 576px) {
+        .similar-products__content__all-product--one-product {
+          min-width: 50%; } }
+      .similar-products__content__all-product--one-product--img {
         width: 100%; }
+      .similar-products__content__all-product--one-product--discount {
+        position: absolute;
+        top: 197px;
+        background-color: #db2b1d;
+        color: white;
+        width: 45px;
+        text-align: center;
+        font-size: 0.8rem;
+        height: 22px;
+        font-weight: 600;
+        padding-top: 2px; }
+      .similar-products__content__all-product--one-product--heart {
+        position: absolute;
+        z-index: 1;
+        right: 7px;
+        top: 8px;
+        width: 27px !important;
+        height: 27px;
+        text-align: center;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        background: white;
+        border-radius: 110%; }
+      .similar-products__content__all-product--one-product--footer {
+        margin-top: 10px;
+        letter-spacing: .3px; }
+        .similar-products__content__all-product--one-product--footer--price {
+          line-height: 1.5; }
+          .similar-products__content__all-product--one-product--footer--price span {
+            font-size: 0.8rem;
+            color: #ce3535;
+            font-weight: 600; }
+          .similar-products__content__all-product--one-product--footer--price del {
+            font-size: 0.8rem;
+            color: #6f6f6f; }
+        .similar-products__content__all-product--one-product--footer--name {
+          line-height: 1.5;
+          font-size: 0.8rem;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          overflow: hidden; }
+        .similar-products__content__all-product--one-product--footer--brand {
+          line-height: 1.5;
+          font-size: 0.8rem; }
 
 .search {
   margin-top: 0.8em; }

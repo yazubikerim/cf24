@@ -661,6 +661,7 @@
 
 .similar-products{
     margin-top: 35px;
+    margin-bottom: 35px;
     &__content{
         &--head-text{
             font-size: $exta-big-font;
@@ -670,6 +671,7 @@
             display: flex;
             justify-content: left;
             overflow-x: visible;
+      
             &--one-product{
                 cursor: pointer;
                 left: 0;
@@ -679,9 +681,71 @@
                 position: relative;
                 color: #333;
                 filter: brightness(0.95);
-                img{
-                    width: 100%;
-                
+                @include max-tablet{
+                    min-width: 24%;
+                }
+                @include max-phone{
+                    min-width: 50%;
+                }
+                &--img{
+                   width: 100%;
+                }
+                &--discount{
+                    position: absolute;
+                    top: 197px;
+                    background-color: #db2b1d;
+                    color: white;
+                    width: 45px;
+                    text-align: center;
+                    font-size: $small-font;
+                    height: 22px;
+                    font-weight: 600;
+                    padding-top: 2px;
+                }
+                &--heart{
+                    position: absolute;
+                    z-index: 1;
+                    right: 7px;
+                    top: 8px;
+                    width: 27px !important;
+                    height: 27px;
+                    text-align: center;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    background: white;
+                    border-radius: 110%;
+                }
+                &--footer{
+                    margin-top: 10px;
+                    letter-spacing: .3px;
+                    &--price{
+                        line-height: 1.5;
+                        span{
+                            font-size: $small-font;
+                            color: #ce3535;
+                            font-weight: 600;
+                        }
+                      del{
+                        font-size: $small-font;
+                        color: #6f6f6f;
+                      }
+                    }
+
+                    &--name{
+                        line-height: 1.5;
+                        font-size: $small-font;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        overflow: hidden;
+                    }
+                    &--brand{
+                        line-height: 1.5;
+                        font-size: $small-font;
+                    }
+
+                   
                 }
             }
         }
