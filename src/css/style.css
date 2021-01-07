@@ -8109,6 +8109,38 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .product-image-content__img {
   width: 550px;
   height: 730px; }
+  @media (max-width: 768px) {
+    .product-image-content__img {
+      width: auto;
+      height: 500px; } }
+
+.product-image-content--discount {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  color: #db2b1d;
+  width: 50px;
+  text-align: center;
+  font-size: 0.8rem;
+  height: 22px;
+  font-weight: 600;
+  padding-top: 2px; }
+
+.product-image-content--heart {
+  position: absolute;
+  z-index: 1;
+  right: 5%;
+  border: 1px solid #e4e3e3;
+  top: 6%;
+  width: 40px !important;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #f3f3f3;
+  border-radius: 110%; }
 
 .brand-logo {
   font-size: 24px;
@@ -8327,6 +8359,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
     width: 305px; }
 
 /* rating */
+@media (max-width: 992px) {
+  .rating .options {
+    display: none; } }
+
 .rating__head {
   font-size: 1.7rem; }
 
@@ -8335,16 +8371,33 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-top: 15px;
   font-weight: 600;
   text-decoration: underline; }
+  @media (max-width: 992px) {
+    .rating__count {
+      display: none; } }
 
 .rating__statistics {
   margin-top: 45px; }
+  @media (max-width: 992px) {
+    .rating__statistics {
+      margin-top: 30px;
+      margin-bottom: 30px; } }
   .rating__statistics__point {
     margin-left: 35px; }
+    @media (max-width: 992px) {
+      .rating__statistics__point {
+        display: flex;
+        justify-content: center !important;
+        margin-bottom: 30px;
+        margin-left: 0; } }
     .rating__statistics__point--border {
       background: url("/images/balon.png");
       height: 200px;
       background-repeat: no-repeat;
       background-size: inherit; }
+      @media (max-width: 992px) {
+        .rating__statistics__point--border {
+          background: none;
+          height: 0; } }
       .rating__statistics__point--border .note {
         position: absolute;
         left: 113px;
@@ -8355,6 +8408,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-weight: 600;
         font-size: 14px;
         color: #919191; }
+        @media (max-width: 992px) {
+          .rating__statistics__point--border .note {
+            display: none; } }
       .rating__statistics__point--border__stars {
         width: 128px;
         height: 20px;
@@ -8364,6 +8420,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
         background-size: contain;
         margin-left: 25px;
         margin-top: 30px; }
+        @media (max-width: 992px) {
+          .rating__statistics__point--border__stars {
+            margin-top: 2px; } }
         .rating__statistics__point--border__stars--star {
           width: 126px;
           height: 25px;
@@ -8372,16 +8431,31 @@ ORDER: Base + typography > general layout + grid > page layout > components
           background-size: contain;
           margin-top: -4px;
           float: right; }
+          @media (max-width: 992px) {
+            .rating__statistics__point--border__stars--star {
+              width: 147px;
+              height: 30px; } }
           .rating__statistics__point--border__stars--star span {
             background: url(/images/star-light_yellow.png) repeat-x;
             height: 25px;
             background-size: contain;
             display: block; }
+            @media (max-width: 992px) {
+              .rating__statistics__point--border__stars--star span {
+                height: 30px; } }
       .rating__statistics__point--border__count {
         margin: -22px 30px;
         width: 115px;
         color: #919191;
         font-size: 84px; }
+        @media (max-width: 992px) {
+          .rating__statistics__point--border__count {
+            margin-top: 0px;
+            padding-left: 19px;
+            font-size: 46px; } }
+  @media (max-width: 992px) {
+    .rating__statistics__options {
+      display: none; } }
   .rating__statistics__options--option {
     margin-bottom: 9px; }
     .rating__statistics__options--option__stars {
@@ -8429,19 +8503,53 @@ ORDER: Base + typography > general layout + grid > page layout > components
       display: inline-block;
       margin-left: 10px;
       padding: 2px; }
+  @media (max-width: 992px) {
+    .rating__statistics__button {
+      text-align: center;
+      margin-top: 35px; } }
   .rating__statistics__button-1 {
     margin-top: 35px;
     width: 200px; }
+    @media (max-width: 992px) {
+      .rating__statistics__button-1 {
+        width: 92vw; } }
   .rating__statistics__button-2 {
     margin-top: 17px;
     width: 200px; }
+    @media (max-width: 992px) {
+      .rating__statistics__button-2 {
+        width: 92vw; } }
 
 .comment__filter {
   background-color: #f0f0f0;
   min-height: 50px;
   margin-bottom: 20px; }
+  @media (max-width: 992px) {
+    .comment__filter .mobil-dropdown-button {
+      justify-content: flex-end;
+      display: flex; } }
+  .comment__filter__filter-button {
+    display: none; }
+    @media (max-width: 992px) {
+      .comment__filter__filter-button {
+        display: block;
+        margin-top: 10px;
+        font-size: 13px;
+        border: 1px solid #ccc;
+        outline: none;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+        background-color: white; } }
+    .comment__filter__filter-button img {
+      width: 10px;
+      position: absolute;
+      right: 25px;
+      top: 50%; }
   .comment__filter__dropdown {
     padding-top: 10px;
+    padding-bottom: 10px;
     float: left;
     overflow: hidden;
     font-size: 13px;
@@ -8589,7 +8697,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
         width: 100%; }
       .similar-products__content__all-product--one-product--discount {
         position: absolute;
-        top: 197px;
+        top: 59%;
         background-color: #db2b1d;
         color: white;
         width: 45px;

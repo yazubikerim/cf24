@@ -36,6 +36,38 @@
     &__img {
         width: 550px;
         height: 730px;
+        @include max-tablet {
+            width: auto;
+            height: 500px;
+        }
+    }
+    &--discount {
+        position: absolute;
+    top: 7%;
+    left: 7%;
+    background-color: white;
+    border: 1px solid #e7e7e7;
+    color: #db2b1d;
+    width: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 22px;
+    font-weight: 600;
+    padding-top: 2px;
+    }
+    &--heart{
+        position: absolute;
+    z-index: 1;
+    right: 5%;
+    border: 1px solid #e4e3e3;
+    top: 6%;
+    width: 40px !important;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f3f3f3;
+    border-radius: 110%;
     }
 }
 
@@ -348,7 +380,11 @@
 
 /* rating */
 .rating {
-
+    .options{
+        @include max-laptop{
+            display: none;
+         }
+    }
     &__head {
         font-size: $exta-big-font;
     }
@@ -358,19 +394,38 @@
         margin-top: 15px;
         font-weight: 600;
         text-decoration: underline;
+        @include max-laptop{
+            display: none;
+        }
     }
 
     &__statistics {
         margin-top: 45px;
+        @include max-laptop{
+            margin-top: 30px;
+            margin-bottom: 30px;
+         }
 
         &__point {
             margin-left: 35px;
+            @include max-laptop{
+                display: flex;
+                justify-content: center !important;
+                margin-bottom: 30px;
+                margin-left: 0;
+               
+            }
+            
 
             &--border {
                 background: url("/images/balon.png");
                 height: 200px;
                 background-repeat: no-repeat;
                 background-size: inherit;
+                @include max-laptop{
+                    background: none;
+                    height: 0;
+                }
 
                 .note {
                     position: absolute;
@@ -382,6 +437,9 @@
                     font-weight: 600;
                     font-size: 14px;
                     color: #919191;
+                    @include max-laptop{
+                        display: none;
+                    }
                 }
 
                 &__stars {
@@ -393,6 +451,10 @@
                     background-size: contain;
                     margin-left: 25px;
                     margin-top: 30px;
+                    @include max-laptop{
+                        margin-top: 2px;
+                      
+                    }
 
                     &--star {
                         width: 126px;
@@ -402,12 +464,19 @@
                         background-size: contain;
                         margin-top: -4px;
                         float: right;
+                        @include max-laptop{
+                            width: 147px;
+                            height: 30px;
+                        }
 
                         span {
                             background: url(/images/star-light_yellow.png) repeat-x;
                             height: 25px;
                             background-size: contain;
                             display: block;
+                            @include max-laptop{
+                                height: 30px;
+                            }
                         }
                     }
                 }
@@ -417,12 +486,21 @@
                     width: 115px;
                     color: #919191;
                     font-size: 84px;
+                    @include max-laptop{
+                        margin-top: 0px;
+                        padding-left: 19px;
+                        font-size: 46px;
+                    }
                 }
 
             }
         }
 
         &__options {
+           
+            @include max-laptop{
+               display: none;
+            }
             &--option {
                 margin-bottom: 9px;
 
@@ -434,7 +512,7 @@
                     background: url(https://cdn1.clubfashion24.de/wp-content/uploads/2019/12/star-gray-new.png) repeat-x;
                     vertical-align: middle;
                     background-size: contain;
-
+                   
                     &__star {
                         background: url(/images/star-light_yellow.png) repeat-x;
                         height: 16px;
@@ -486,28 +564,67 @@
                 }
             }
         }
-
-        &__button-1 {
+        &__button{
+            @include max-laptop{
+                text-align: center;
+                margin-top: 35px;
+             }
+        &-1 {
             margin-top: 35px;
-            width: 200px;
+            width:200px;
+            @include max-laptop{
+                width: 92vw;
+             }
         }
 
-        &__button-2 {
+        &-2 {
             margin-top: 17px;
             width: 200px;
+            @include max-laptop{
+                width: 92vw;
+             }
         }
     }
+    
+}
 }
 
 
 .comment {
     &__filter {
+        .mobil-dropdown-button{
+            @include max-laptop{
+            justify-content: flex-end;
+            display: flex;}
+        }
         background-color: #f0f0f0;
         min-height: 50px;
         margin-bottom: 20px;
-
+        &__filter-button{
+            display: none;
+            @include max-laptop{
+                display: block;
+                margin-top: 10px;
+                font-size: 13px;
+                border: 1px solid #ccc;
+                outline: none;
+                color: black;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 100%;
+                background-color: white;
+            }
+            img{
+                width: 10px;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+            }
+        }
         &__dropdown {
+
             padding-top: 10px;
+            padding-bottom: 10px;
 
             &:hover .comment__filter__dropdown__content {
                 display: block;
@@ -532,6 +649,7 @@
                 width: 172px;
                 background-color: white;
                 margin: 0;
+
                 img {
                     margin-left: 5px;
                     margin-right: 3px;
@@ -692,7 +810,7 @@
                 }
                 &--discount{
                     position: absolute;
-                    top: 197px;
+                    top: 59%;
                     background-color: #db2b1d;
                     color: white;
                     width: 45px;
