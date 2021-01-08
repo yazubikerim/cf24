@@ -8117,7 +8117,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .product-image-content--discount {
   position: absolute;
   top: 7%;
-  left: 7%;
+  left: 5%;
   background-color: white;
   border: 1px solid #e7e7e7;
   color: #db2b1d;
@@ -8127,6 +8127,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: 22px;
   font-weight: 600;
   padding-top: 2px; }
+  @media (min-width: 768px) {
+    .product-image-content--discount {
+      display: none; } }
 
 .product-image-content--heart {
   position: absolute;
@@ -8134,13 +8137,55 @@ ORDER: Base + typography > general layout + grid > page layout > components
   right: 5%;
   border: 1px solid #e4e3e3;
   top: 6%;
-  width: 40px !important;
+  width: 40px;
   height: 40px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   background: #f3f3f3;
   border-radius: 110%; }
+  @media (min-width: 768px) {
+    .product-image-content--heart {
+      display: none; } }
+
+.product-image-content--share {
+  position: absolute;
+  z-index: 1;
+  right: 5%;
+  border: 1px solid #e4e3e3;
+  top: 16%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #f3f3f3;
+  border-radius: 110%; }
+  @media (min-width: 768px) {
+    .product-image-content--share {
+      display: none; } }
+
+.product-image-content--next {
+  position: absolute;
+  z-index: 1;
+  right: 5%;
+  border: 1px solid #e4e3e3;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white; }
+  @media (min-width: 768px) {
+    .product-image-content--next {
+      display: none; } }
+  .product-image-content--next--icon {
+    width: 30px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px; }
 
 .brand-logo {
   font-size: 24px;
@@ -8231,6 +8276,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 13px;
   padding-top: 12px;
   padding-bottom: 12px; }
+  @media (max-width: 576px) {
+    .versand {
+      text-align: center; } }
   .versand__truck {
     height: 28px;
     width: auto;
@@ -8644,9 +8692,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-top: 25px;
   font-size: 0.8rem;
   color: black; }
+  .comment__row__evaluation--text-content {
+    display: flex;
+    align-items: center; }
   .comment__row__evaluation--text {
     font-weight: 600;
     text-decoration: underline; }
+  .comment__row__evaluation--ques-answ {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    @media (max-width: 576px) {
+      .comment__row__evaluation--ques-answ {
+        justify-content: start;
+        margin-top: 15px; } }
   .comment__row__evaluation--question {
     font-size: 0.8rem;
     color: black;
