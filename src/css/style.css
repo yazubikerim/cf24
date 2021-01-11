@@ -9093,3 +9093,37 @@ ORDER: Base + typography > general layout + grid > page layout > components
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   margin-right: 9px; }
+
+.profil__welcome--title {
+  font-size: 1.7rem;
+  font-weight: 600; }
+
+.profil__welcome--text {
+  line-height: 1.44; }
+
+.profil__last-order {
+  margin-top: 20px; }
+  .profil__last-order--title {
+    font-size: 1.7rem;
+    font-weight: 600; }
+  .profil__last-order--content {
+    display: flex;
+    justify-content: center; }
+    .profil__last-order--content__circle {
+      border-radius: 50%;
+      border: 1px dashed #282828;
+      padding: 15px;
+      width: 60px;
+      height: 60px; }
+      .profil__last-order--content__circle--img {
+        width: 30px; }
+
+.mobil-space {
+  height: 10px;
+  background-color: #eeeeee; }
+
+.footer-home-link {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center; }

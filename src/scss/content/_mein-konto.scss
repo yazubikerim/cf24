@@ -1,0 +1,44 @@
+.profil{
+    &__welcome{
+        &--title{
+            font-size: $exta-big-font;
+            font-weight: 600;
+        }
+        &--text{
+            line-height: 1.44;
+        }
+    }
+    &__last-order{
+        margin-top: 20px;
+        &--title{
+            font-size: $exta-big-font;
+            font-weight: 600;
+        }
+        &--content{
+            display: flex;
+            justify-content: center;
+            &__circle{
+                border-radius: 50%;
+                border: 1px dashed #282828;
+                padding: 15px;
+                width: 60px;
+                height: 60px;
+                &--img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+}
+
+.mobil-space{
+    height: 10px;
+    background-color: #eeeeee;
+}
+.footer-home-link{
+   display: flex;
+   height: 50px;
+   align-items: center;
+   justify-content: center;
+}
