@@ -9099,17 +9099,25 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-weight: 600; }
 
 .profil__welcome--text {
-  line-height: 1.44; }
+  line-height: 1.44;
+  margin-top: 10px; }
 
 .profil__last-order {
   margin-top: 20px; }
+  @media (max-width: 768px) {
+    .profil__last-order {
+      display: none; } }
   .profil__last-order--title {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     font-weight: 600; }
   .profil__last-order--content {
-    display: flex;
-    justify-content: center; }
+    display: block;
+    position: relative;
+    height: 150px; }
     .profil__last-order--content__circle {
+      position: absolute;
+      left: 50%;
+      top: 20px;
       border-radius: 50%;
       border: 1px dashed #282828;
       padding: 15px;
@@ -9117,6 +9125,104 @@ ORDER: Base + typography > general layout + grid > page layout > components
       height: 60px; }
       .profil__last-order--content__circle--img {
         width: 30px; }
+    .profil__last-order--content--text {
+      position: absolute;
+      left: 38%;
+      top: 95px;
+      font-weight: 600; }
+
+@media (max-width: 768px) {
+  .profil__contact {
+    display: none; } }
+
+.profil__contact--title {
+  font-size: 1.1rem;
+  font-weight: 600; }
+
+.profil__contact--info {
+  width: 50%;
+  border: 1px solid #dfdfdf;
+  font-size: 0.9rem;
+  padding: 15px; }
+  .profil__contact--info--title {
+    color: #282828;
+    font-weight: 600; }
+  .profil__contact--info--username {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.8; }
+  .profil__contact--info--mail {
+    font-size: 1rem;
+    line-height: 1.8; }
+  .profil__contact--info--edit-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px; }
+    .profil__contact--info--edit-button a:hover {
+      text-decoration: none; }
+    .profil__contact--info--edit-button--img {
+      width: 20px;
+      margin-bottom: 6px; }
+    .profil__contact--info--edit-button span {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-left: 4px;
+      margin-top: 5px; }
+
+.profil__adress {
+  margin-top: 36px; }
+  @media (max-width: 768px) {
+    .profil__adress {
+      display: none; } }
+  .profil__adress--title {
+    font-size: 1.1rem;
+    font-weight: 600; }
+  .profil__adress--billing {
+    border: 1px solid #dfdfdf;
+    font-size: 0.9rem;
+    padding: 15px; }
+    .profil__adress--billing--title {
+      color: #282828;
+      font-weight: 600; }
+    .profil__adress--billing--text {
+      margin-top: 10px;
+      font-size: 1rem; }
+    .profil__adress--billing--button {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px; }
+      .profil__adress--billing--button a:hover {
+        text-decoration: none; }
+      .profil__adress--billing--button--img {
+        width: 20px;
+        margin-bottom: 6px; }
+      .profil__adress--billing--button span {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-left: 4px;
+        margin-top: 5px; }
+  .profil__adress--delivery {
+    border: 1px solid #dfdfdf;
+    font-size: 0.9rem;
+    padding: 15px; }
+
+.orders__title {
+  display: flex;
+  ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%; }
+  .orders__title div:first-child {
+    font-size: 1.7rem;
+    font-weight: 600; }
+  .orders__title button {
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 4px; }
+
+.orders__content--circle {
+  width: 20px; }
 
 .mobil-space {
   height: 10px;

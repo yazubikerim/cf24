@@ -236,8 +236,9 @@
   <!--END HEADER-->
 
 
-  <!--Breadcrumb-->
+
   <div class="container-lg">
+    <!--Breadcrumb-->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/mein-konto.html">Dein Konto</a></li>
@@ -254,12 +255,12 @@
 
     <!--Left-Sidebar-->
     <div class="row">
-      <div class="col-md-3">
+      <aside class="col-md-3">
         <nav>
           <div class="sibebar-sticky">
             <ul class="nav">
               <li class="nav__li">
-                <a href="/mein-konto/orders.html" class="nav__li__a nav__li__active ">Deine Bestellungen</a>
+                <a href="/mein-konto/orders.html" class="nav__li__a">Deine Bestellungen</a>
               </li>
             </ul>
             <ul class="nav">
@@ -283,80 +284,92 @@
               </li>
             </ul>
             <ul class="nav">
-                <li class="nav__li">
-                  <a href="/mein-konto/wunschliste.html" class="nav__li__a">Deine Wunschliste</a>
-                </li>
-              </ul>
-              <ul class="nav">
-                <li class="nav__li">
-                  <a href="/faq.html" class="nav__li__a">Hilfe & Kontakt</a>
-                </li>
-              </ul>
-              <ul class="nav">
-                <li class="nav__li">
-                  <a href="/mein-konto/login.html" class="nav__li__a">Abmelden</a>
-                </li>
-              </ul>
+              <li class="nav__li">
+                <a href="/mein-konto/wunschliste.html" class="nav__li__a">Deine Wunschliste</a>
+              </li>
+            </ul>
+            <ul class="nav">
+              <li class="nav__li">
+                <a href="/faq.html" class="nav__li__a">Hilfe & Kontakt</a>
+              </li>
+            </ul>
+            <ul class="nav">
+              <li class="nav__li">
+                <a href="/mein-konto/login.html" class="nav__li__a">Abmelden</a>
+              </li>
+            </ul>
           </div>
         </nav>
-      </div>
+      </aside>
 
 
       <!--Contact Profil-->
-    <div class="col-md-9">
+      <section class="col-md-9">
         <div class="profil">
-            <div class="profil__welcome">
-                <div class="profil__welcome--title">Hallo kerim
-                </div>
-                <div class="profil__welcome--text">
-                    <p> Von Ihrem Konto aus haben Sie die Möglichkeit, Ihre letzten Vorgänge
-                    einzusehen und Ihre Daten zu bearbeiten. Wählen Sie dazu einen der untenstehenden Links, um
-                    Informationen
-                    anzusehen oder zu bearbeiten.</p>
-                </div>
+          <article class="row profil__welcome">
+            <div class="col-lg-12 profil__welcome--title">Hallo kerim
             </div>
-            <div class="profil__last-order">
-                <div class="profil__last-order--title">Letzte Bestellungen
-                </div>
-                <hr>
-                <div class="profil__last-order--content"><div class="profil__last-order--content__circle"><img src="/images/icon/shopping-bag-outline.svg" alt="" class="profil__last-order--content__circle--img"></div>
-                    <span class="profil__last-order--content--text">Du hast keine Bestellungen getätigt.
-                    </span>
-                </div>
+            <div class="col-lg-12 profil__welcome--text">
+              <p> Von Ihrem Konto aus haben Sie die Möglichkeit, Ihre letzten Vorgänge
+                einzusehen und Ihre Daten zu bearbeiten. Wählen Sie dazu einen der untenstehenden Links, um
+                Informationen
+                anzusehen oder zu bearbeiten.</p>
             </div>
-            <div class="profil__contact">
-                <div class="profil__contact--title">Kontakt</div>
-                <hr>
-                <div class="profil__contact--info"></div>
+          </article>
+          <article class="row profil__last-order">
+            <div class="col-lg-12 profil__last-order--title">Letzte Bestellungen
             </div>
-            <div class="profil__adress">
-                <div class="profil__adress--title">Die folgenden Adressen werden standardmäßig auf der Bezahlseite
-                    verwendet.
-                </div>
-                <div class="profil__adress--billing">
-                    <div class="profil__adress--billing--title"></div>
-                    <div class="profil__adress--billing--text"></div>
-                    <div class="profil__adress--billing--button"><img src="" alt=""
-                            class="profil__adress--billing--button--img"><span>Hinzufügen</span></div>
-                </div>
-                <div class="profil__adress--delivery">
-                    <div class="profil__adress--billing--title"></div>
-                    <div class="profil__adress--billing--text"></div>
-                    <div class="profil__adress--billing--button"><img src="" alt=""
-                            class="profil__adress--billing--button--img"><span>Hinzufügen</span></div>
-                </div>
+            <hr class="col-lg-12">
+            <div class="col-lg-12 profil__last-order--content">
+              <div class="profil__last-order--content__circle"><img src="/images/icon/shopping-bag-outline.svg" alt=""
+                  class="profil__last-order--content__circle--img"></div>
+              <span class="profil__last-order--content--text">Du hast keine Bestellungen getätigt.
+              </span>
             </div>
+          </article>
+          <article class="row profil__contact">
+            <div class="col-lg-12 profil__contact--title">Kontakt</div>
+            <hr class="col-lg-12">
+            <div class="col-lg-6 profil__contact--info">
+              <div class="profil__contact--info--title">Deine Daten</div>
+              <div class="profil__contact--info--username">kerim gecici</div>
+              <div class="profil__contact--info--mail">kerim.gecici@yazubi.com</div>
+              <div class="profil__contact--info--edit-button"><a href=""><img src="/images/icon/edit.svg" alt=""
+                    class="profil__contact--info--edit-button--img"><span>Bearbeiten</span></a></div>
+            </div>
+          </article>
+          <article class="row profil__adress">
+            <div class="col-lg-12 profil__adress--title">Die folgenden Adressen werden standardmäßig auf der Bezahlseite
+              verwendet.
+            </div>
+            <hr class="col-lg-12">
+            <div class="col-lg-6 profil__adress--billing">
+              <div class="profil__adress--billing--title">Rechnungsadresse</div>
+              <div class="profil__adress--billing--text">Du hast keine Rechnungsadresse gespeichert. Speichere jetzt
+                eine Adresse, um an der Kasse Zeit zu sparen.</div>
+              <div class="profil__adress--billing--button"><a href=""><img src="/images/icon/edit.svg" alt=""
+                    class="profil__adress--billing--button--img"><span>Hinzufügen</span></a></div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 profil__adress--delivery">
+              <div class="profil__adress--billing--title">Lieferadresse</div>
+              <div class="profil__adress--billing--text">Du hast keine Lieferadresse gespeichert. Speichere jetzt eine
+                Adresse, um an der Kasse Zeit zu sparen.</div>
+              <div class="profil__adress--billing--button"><a href=""><img src="/images/icon/edit.svg" alt=""
+                    class="profil__adress--billing--button--img"><span>Hinzufügen</span></a></div>
+            </div>
+          </article>
         </div>
+      </section>
     </div>
-</div>
 
 
-    <!--FAQs Mobil-->
+    <!--Mobil Menu-->
     <div class="mobil-faq">
       <div class="row">
         <div class="col-md-12 mobil-space"></div>
         <div class="col-md-12 mobil-faq__row">
-        
+
           <a href="/mein-konto/orders.html">
             <div class="mobil-faq__row--div">
               <img src="/images/icon/order.svg" alt="" class="mobil-faq__row--icon">
@@ -396,7 +409,7 @@
           <a href="/mein-konto/edit-address.html">
             <div class="mobil-faq__row--div">
               <img src="/images/icon/adress1.svg" alt="" class="mobil-faq__row--icon">
-              <span class="mobil-faq__row--text nav__li__active">
+              <span class="mobil-faq__row--text">
                 Deine Adressen
               </span>
               <div class="mobil-faq__row--arrow"><span></span><span></span></div>
@@ -416,56 +429,51 @@
           </a>
         </div>
         <div class="col-md-12 mobil-faq__row">
-            <hr class="mobil-faq__row--hr">
-            <a href="/mein-konto/wunschliste.html">
-              <div class="mobil-faq__row--div">
-                <img src="/images/icon/heart1.svg" alt="" class="mobil-faq__row--icon">
-                <span class="mobil-faq__row--text">
-                    Deine Wunschliste
-                </span>
-                <div class="mobil-faq__row--arrow"><span></span><span></span></div>
-              </div>
-            </a>
-          </div>
-        
+          <hr class="mobil-faq__row--hr">
+          <a href="/mein-konto/wunschliste.html">
+            <div class="mobil-faq__row--div">
+              <img src="/images/icon/heart1.svg" alt="" class="mobil-faq__row--icon">
+              <span class="mobil-faq__row--text">
+                Deine Wunschliste
+              </span>
+              <div class="mobil-faq__row--arrow"><span></span><span></span></div>
+            </div>
+          </a>
+        </div>
         <div class="col-md-12 mobil-space"></div>
-
         <div class="col-md-12 mobil-faq__row">
-         
-            <a href="/faq.html">
-              <div class="mobil-faq__row--div">
-                <img src="/images/icon/info1.svg" alt="" class="mobil-faq__row--icon">
-                <span class="mobil-faq__row--text">
-                    Hilfe & Kontakt
-                </span>
-                <div class="mobil-faq__row--arrow"><span></span><span></span></div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-12 mobil-faq__row">
-            <hr class="mobil-faq__row--hr">
-            <a href="/mein-konto/login.html">
-              <div class="mobil-faq__row--div">
-                <img src="/images/icon/logout.svg" alt="" class="mobil-faq__row--icon">
-                <span class="mobil-faq__row--text">
-                    Abmelden
-                </span>
-               
-              </div>
-            </a>
-          </div>
-          <div class="col-md-12 mobil-space"></div>
-          <div class="col-md-12 footer-home-link">
-              <a href="/index.html">
+          <a href="/faq.html">
+            <div class="mobil-faq__row--div">
+              <img src="/images/icon/info1.svg" alt="" class="mobil-faq__row--icon">
+              <span class="mobil-faq__row--text">
+                Hilfe & Kontakt
+              </span>
+              <div class="mobil-faq__row--arrow"><span></span><span></span></div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-12 mobil-faq__row">
+          <hr class="mobil-faq__row--hr">
+          <a href="/mein-konto/login.html">
+            <div class="mobil-faq__row--div">
+              <img src="/images/icon/logout.svg" alt="" class="mobil-faq__row--icon">
+              <span class="mobil-faq__row--text">
+                Abmelden
+              </span>
+
+            </div>
+          </a>
+        </div>
+        <div class="col-md-12 mobil-space"></div>
+        <div class="col-md-12 footer-home-link">
+          <a href="/index.html">
             <span>
-                Startseite
+              Startseite
             </span></a>
-     
-          </div>
-          <div class="col-md-12 mobil-space"></div>
+        </div>
+        <div class="col-md-12 mobil-space"></div>
       </div>
     </div>
-
     <hr class="hr-spacing">
 
     <!--FAQs Footer-->
