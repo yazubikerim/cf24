@@ -57,6 +57,12 @@ $xc-desktop-width: 1200px;
   }
 }
 
+@mixin min-desktop {
+  @media (min-width: #{$xc-desktop-width}) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: #{$xc-desktop-width}) {
     @content;

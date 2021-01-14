@@ -201,11 +201,87 @@
 }
 
 &__content{
-    &--circle{
-        width: 20px;
-    }
-}
+    &__filter{
+        &--select-button{
+            position: absolute;
+            display: block;
+            max-width: 200px;
+            min-width: 180px;
+            top: 0;
+            right: 0;
+            border: 2px solid #858484;;
+            background-color: white;
+            z-index: 1;
+          
+            select {
+              border: none;
+              outline: none;
+              background: transparent;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              border-radius: 0;
+              margin: 0;
+              display: block;
+              width: 100%;
+              padding: 12px 55px 15px 15px;
+              font-size: 14px;
+              color: black;
+            }
+          
+            &:after {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 50px;
+              height: 100%;
+              line-height: 48px;
+              content: "∨";
+              text-align: center;
+              color: black;
+              font-size: 18px;
+              border-left: 1px solid  #858484;
+              z-index: -1;
+            }
+        }
+        &--search{
+            &__is-content{
+                &--search-icon{
+                    position: absolute;
+                    margin-top: 16px;
+                    margin-left: 10px;
+                }
+                &--input{
+                    width: 34%;
+                    height: 50px;
+                    padding-left: 45px;
+                    border: #ccc solid 1.5px;
+                    border-radius: 5px;
+                }
+            }
 
+        }
+    }
+        
+                
+
+
+
+    &--circle{
+        margin-left: 350px;
+        border-radius: 50%;
+        border: 1px dashed #282828;
+        padding: 15px;
+        width: 120px;
+        height: 120px;
+
+        &--img{
+            width: 87px;
+
+        }
+    }
+  
+}
 }
 
 
@@ -221,4 +297,14 @@
     height: 50px;
     align-items: center;
     justify-content: center;
+}
+
+
+
+
+
+
+
+.custom-select-2 {
+   
 }
