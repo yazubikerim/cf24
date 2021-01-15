@@ -202,6 +202,12 @@
 
 &__content{
     &__filter{
+        span{
+            position: absolute;
+            top: 13px;
+            right: 200px;
+        
+        }
         &--select-button{
             position: absolute;
             display: block;
@@ -245,7 +251,13 @@
             }
         }
         &--search{
+          
             &__is-content{
+                input{
+                    &:focus{
+                        border: none;
+                    }
+                }
                 &--search-icon{
                     position: absolute;
                     margin-top: 16px;
@@ -262,10 +274,6 @@
 
         }
     }
-        
-                
-
-
 
     &--circle{
         margin-left: 350px;
@@ -274,17 +282,30 @@
         padding: 15px;
         width: 120px;
         height: 120px;
-
+        margin-top: 50px;
         &--img{
             width: 87px;
 
         }
     }
-  
+  &--text{
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 600;
+  }
+  &--button{
+    button{
+        background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left: 315px;
+    margin-top: 45px;
+    width: 200px;
+    }
 }
 }
 
-
+}
 
 
 .mobil-space {
@@ -297,14 +318,4 @@
     height: 50px;
     align-items: center;
     justify-content: center;
-}
-
-
-
-
-
-
-
-.custom-select-2 {
-   
 }

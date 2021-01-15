@@ -9222,6 +9222,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
     color: white;
     border-radius: 4px; }
 
+.orders__content__filter span {
+  position: absolute;
+  top: 13px;
+  right: 200px; }
+
 .orders__content__filter--select-button {
   position: absolute;
   display: block;
@@ -9260,6 +9265,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     border-left: 1px solid  #858484;
     z-index: -1; }
 
+.orders__content__filter--search__is-content input:focus {
+  border: none; }
+
 .orders__content__filter--search__is-content--search-icon {
   position: absolute;
   margin-top: 16px;
@@ -9278,9 +9286,23 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border: 1px dashed #282828;
   padding: 15px;
   width: 120px;
-  height: 120px; }
+  height: 120px;
+  margin-top: 50px; }
   .orders__content--circle--img {
     width: 87px; }
+
+.orders__content--text {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600; }
+
+.orders__content--button button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-left: 315px;
+  margin-top: 45px;
+  width: 200px; }
 
 .mobil-space {
   height: 10px;
